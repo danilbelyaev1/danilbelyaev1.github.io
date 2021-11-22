@@ -170,15 +170,38 @@ let buttons = document.querySelectorAll('button');
             i.style.background = 'white';
         });
     });
-    let fixedButton = document.querySelector('.fixed-button'),
+    let fixedButton = document.querySelectorAll('.fixed-button'),
         fixedButtonModal = document.querySelector('.fixed-button-modal'),
         fixedButtonClose = document.querySelector('.fixed-button-modal-close');
-    fixedButton.addEventListener('click', function(){
-        fixedButton.classList.add('fixed-button-active');
-        setTimeout(()=> fixedButtonModal.classList.add('fixed-button-modal-active'), 300);
-    });
-    fixedButtonClose.addEventListener('click', function(){
-        setTimeout(()=> fixedButton.classList.remove('fixed-button-active'), 300);
-        fixedButtonModal.classList.remove('fixed-button-modal-active');
-    });
+        fixedButton.forEach((i)=>{
+            i.addEventListener('click', function(){
+                i.classList.add('fixed-button-active');
+                setTimeout(()=> fixedButtonModal.classList.add('fixed-button-modal-active'), 300);
+            });
+            fixedButtonClose.addEventListener('click', function(){
+                setTimeout(()=> i.classList.remove('fixed-button-active'), 300);
+                fixedButtonModal.classList.remove('fixed-button-modal-active');
+            });
+        });
+    let logo = document.querySelector('.mobile .menu-mobile .logo'),
+        fixedButtonM = document.querySelector('.fixed-button-m');
+
+    window.addEventListener('scroll', function(){
+        if( this.scrollY >= 900 ){
+            logo.style.display='none';
+                fixedButtonM.style.display='block';
+        } else {
+            logo.style.display='block';
+                fixedButtonM.style.display='none';
+        }
+    }, {passive: true});
+
+        fixedButtonM.addEventListener('click', function(){
+            fixedButtonM.classList.add('fixed-button-active');
+            setTimeout(()=> fixedButtonModal.classList.add('fixed-button-modal-active'), 300);
+        });
+        fixedButtonClose.addEventListener('click', function(){
+            setTimeout(()=> fixedButtonM.classList.remove('fixed-button-active'), 300);
+            fixedButtonModal.classList.remove('fixed-button-modal-active');
+        });
 });
