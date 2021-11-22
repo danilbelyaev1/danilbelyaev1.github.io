@@ -7193,4 +7193,48 @@ footer
     padding-left: 15px
   footer .footer-list-1 .footer-title-1, footer .footer-list-1 .footer-title-2
     border: 0
-  
+.mobile
+  .fixed-button-m
+      display: none
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+      width: 135px
+      height: 153px
+      margin: 0
+      padding: 0
+      background: none
+      box-shadow: none
+      transition: 0.3s all 
+  .fixed-button-active
+      top: -154px
+@media ( max-width: 992px )
+  .fixed-button-modal
+    transition: 0.3s all 
+    width: 406px
+    height: 281px
+    background: #FDE000
+    box-shadow: none
+    position: fixed
+    top: -281px
+    left: 50%
+    transform: translate(-50%, 0)
+    z-index: 9999
+    padding-top: 63px
+    padding-left: 50px
+
+  .fixed-button-modal-active
+    top: 0
+    box-shadow: 0px 37px 37px rgba(253, 224, 0, 0.18)
+
+@media ( max-width: 450px )
+  .fixed-button-modal
+    width: 100%
+    padding-top: 63px
+
+@media ( max-width: 310px )
+  .fixed-button-modal
+    width: 100%
+    padding-left: 4px
