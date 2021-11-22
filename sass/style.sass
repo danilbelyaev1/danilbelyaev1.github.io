@@ -1,0 +1,7183 @@
+
+.header-about
+  display: flex
+  padding-top: 70px
+  min-height: 900px
+  background: url("../img/header-about-bg.png") center (center / cover) no-repeat
+  padding-left: 90px
+
+  .header-text
+    padding-top: 184px
+    display: flex
+    flex-direction: column
+
+    h1
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 45px
+      line-height: 64px
+      color: #000
+
+    p
+      font-family: Nunito
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      color: #000
+      margin-top: 30px
+
+    .send
+      margin-top: 142px
+      width: 206px
+      height: 50px
+      background: #fde000
+      box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+      border: 0
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 31px
+      letter-spacing: .205em
+      text-transform: uppercase
+      color: #212121
+      cursor: pointer
+
+    .look-work
+      width: 206px
+      height: 50px
+      font-size: 15px
+      line-height: 0
+      color: #000
+      padding-left: 21px
+      padding-top: 24px
+      border-left: .5px solid #000
+      position: relative
+
+      .arrow
+        position: absolute
+        left: -1px
+        bottom: -3px
+
+.swiper
+  width: 773px
+  height: 708px
+  margin-top: 59px
+
+.swiper-slide
+  text-align: center
+  font-size: 18px
+  background: #fff
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  img
+    display: block
+    width: 100%
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+
+.slide-text
+  width: 100%
+  height: 48px
+  background: #fff
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 17px
+  line-height: 31px
+  color: #000
+  padding-top: 5px
+
+.swiper
+  margin-left: auto
+  margin-right: auto
+
+.swiper-pc
+  width: 100%
+
+.swiper-arrow
+  margin-left: 56px
+  margin-right: 15px
+  padding-top: 378px
+
+  img
+    cursor: pointer
+
+.swiper-mobile
+  display: none
+
+  .swiper-slide
+    position: relative
+
+    video
+      width: 100%
+
+    .slider-descr-mobile
+      position: absolute
+      bottom: 0
+      left: 0
+      padding: 9px
+      width: 100%
+      height: 36px
+      background: #fff
+
+.product
+  padding-top: 130px
+
+  h2
+    text-align: center
+
+  .product-img
+    margin-top: 130px
+    display: flex
+    flex-direction: row
+
+  .big-img
+    position: relative
+    z-index: 10
+
+    img
+      width: 100%
+      height: 100%
+
+    .product-img-bg
+      position: absolute
+      top: 0
+      left: -100%
+      text-align: left
+      background: rgba(255, 255, 255, 0.7)
+      -webkit-backdrop-filter: blur(4px)
+      backdrop-filter: blur(4px)
+      width: 100%
+      height: 100%
+      transition: all 0.3s ease
+
+    .product-img-text
+      position: absolute
+      top: 0
+      left: -100%
+      transition: all 0.3s ease
+
+      h2
+        margin-top: 70px
+        margin-left: 70px
+        text-align: left
+
+      p
+        text-align: left
+        font-family: Nunito
+        font-style: normal
+        font-weight: 200
+        font-size: 20px
+        line-height: 31px
+        color: #000
+        margin-left: 70px
+        margin-top: 40px
+
+    &:hover
+      .product-img-bg, .product-img-text
+        left: 0
+
+  .small-img-top
+    display: flex
+    flex-direction: row
+    height: 50%
+
+    .small-img-top-left
+      position: relative
+      z-index: 9
+
+      img
+        height: 100%
+        width: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+      h2
+        margin-top: 45%
+        margin-left: 20px
+        text-align: left
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+
+    .small-img-top-right
+      position: relative
+      z-index: 8
+
+      img
+        height: 100%
+        width: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+      h2
+        margin-top: 45%
+        margin-left: 20px
+        text-align: left
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+
+  .small-img-bot
+    display: flex
+    height: 50%
+
+    .small-img-bot-left
+      position: relative
+      z-index: 6
+
+      img
+        width: 100%
+        height: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+        h2
+          margin-top: 60%
+          margin-left: 10px
+          text-align: left
+          font-size: 25px
+
+        p
+          text-align: left
+          font-family: Nunito
+          font-style: normal
+          font-weight: 200
+          font-size: 14px
+          line-height: 31px
+          color: #000
+          margin-left: 10px
+          margin-top: 40px
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+
+    .small-img-bot-center
+      position: relative
+      z-index: 5
+
+      img
+        width: 100%
+        height: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+        h2
+          margin-top: 76%
+          margin-left: 10px
+          text-align: left
+          font-size: 25px
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+
+    .small-img-bot-right
+      position: relative
+
+      img
+        width: 100%
+        height: 100%
+        opacity: 1
+        transition: 0.5s all ease
+
+      .bot-right-text
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 31px
+        color: #000
+
+        img
+          position: absolute
+          transform: translate(0%, 0%)
+
+      &:hover .bot-right-text img
+        transform: translate(-30%, 0%)
+
+.product-mobile
+  display: none
+
+  h2
+    margin-top: 55px
+    margin-bottom: 55px
+    text-align: center
+
+  .product-mobile-item
+    position: relative
+    height: 167px
+    width: 100%
+
+    a
+      text-decoration: none
+
+      img
+        opacity: .12
+        width: 100%
+        height: 167px
+
+        &:last-child
+          opacity: 1
+
+      h2
+        position: absolute
+        top: 0
+        margin: 0
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+      p
+        position: absolute
+        font-family: Nunito
+        font-style: normal
+        font-weight: 200
+        font-size: 14px
+        line-height: 31px
+        text-align: center
+        color: #000
+        left: 50%
+        top: 65%
+        transform: translate(-50%, -50%)
+
+      .arrow-left-m
+        width: 111px
+        position: absolute
+        left: 50%
+        top: 65%
+        transform: translate(-50%, -50%)
+
+.number
+  padding-top: 100px
+  margin-bottom: 130px
+
+  .number-card
+    text-align: center
+    border-right: 2px solid
+
+    h2
+      text-align: center
+      position: relative
+      z-index: 1
+      padding-top: 30px
+
+      .yellow
+        position: absolute
+        width: 71%
+        height: 16px
+        background: #fde000
+        bottom: 0
+        z-index: -1
+        margin-left: 15%
+
+    .number-text
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 20px
+      line-height: 31px
+      text-align: center
+      color: #000
+      margin-top: 40px
+      margin-bottom: 10px
+
+.number-card:last-child
+  border-right: 0
+
+.demonstration-1-diller
+  background: url("../img/demonstration-1-bg-diller.png") center (center / cover) no-repeat
+  min-height: 875px
+  position: relative
+
+  .demonstration-1-bg-diller
+    content: ""
+    transition: all ease 2s
+    position: absolute
+    top: 0
+    right: 0
+    height: 875px
+    width: 100vh
+    background: linear-gradient(270deg, #FFFFFF 1.05%, rgba(255, 255, 255, 0.91) 37.59%, rgba(255, 255, 255, 0.390625) 82.31%, rgba(255, 255, 255, 0) 98.5%)
+    z-index: 99
+
+  h2
+    position: absolute
+    z-index: 100
+    padding-top: 339px
+    right: 25px
+    padding-left: 15%
+    width: 60%
+
+  h3
+    position: absolute
+    margin-top: 100px
+    float: right
+    width: 60%
+    z-index: 100
+    padding-top: 408px
+    right: 25px
+    padding-left: 15%
+
+  &:hover .demonstration-1-bg-diller
+    width: 200vh
+
+.demonstration-1-mobile-diller
+  background: url("../img/demonstration-1-bg-mob-diller.png") center (center / cover) no-repeat
+  padding: 40px 20px 40px 20px
+  display: none
+
+  h3
+    margin-top: 25px
+
+.demonstration-2-mobile-diller
+  background: url("../img/demonstration-2-bg-mob-diller.png") center (center / cover) no-repeat
+  padding: 40px 20px 40px 20px
+  display: none
+
+  h3
+    margin-top: 25px
+
+.demonstration-3-mobile-diller
+  background: url("../img/demonstration-3-bg-mob-diller.png") center (center / cover) no-repeat
+  padding: 40px 20px 40px 20px
+  display: none
+
+  h3
+    margin-top: 25px
+
+.demonstration-2-diller
+  background: url("../img/demonstration-2-bg-diller.png") center (center / cover) no-repeat
+  min-height: 875px
+  position: relative
+
+  .demonstration-2-bg-diller
+    content: ""
+    transition: all ease 2s
+    position: absolute
+    left: 0px
+    height: 875px
+    padding-top: 339px
+    width: 50%
+    background: linear-gradient(-270deg, #FFFFFF 1.05%, rgba(255, 255, 255, 0.91) 37.59%, rgba(255, 255, 255, 0.390625) 82.31%, rgba(255, 255, 255, 0) 98.5%)
+    text-align: right
+    padding-right: 100px
+    padding-left: 0
+
+  h2
+    position: absolute
+    z-index: 100
+    padding-top: 339px
+    left: 25px
+    padding-right: 15%
+    width: 60%
+
+  h3
+    position: absolute
+    margin-top: 100px
+    float: left
+    width: 60%
+    z-index: 100
+    padding-top: 408px
+    left: 25px
+    padding-right: 15%
+
+  &:hover .demonstration-2-bg-diller
+    width: 100%
+
+.demonstration-3-diller
+  background: url("../img/demonstration-2-bg-diller.png") center (center / cover) no-repeat
+  min-height: 875px
+  position: relative
+
+  .demonstration-3-text-diller
+    content: ""
+    transition: all ease 2s
+    position: absolute
+    top: 0
+    right: 0
+    height: 875px
+    width: 100vh
+    background: linear-gradient(270deg, #FFFFFF 1.05%, rgba(255, 255, 255, 0.91) 37.59%, rgba(255, 255, 255, 0.390625) 82.31%, rgba(255, 255, 255, 0) 98.5%)
+    z-index: 99
+
+  h2
+    position: absolute
+    z-index: 100
+    padding-top: 339px
+    right: 25px
+    width: 60%
+    padding-left: 15%
+    line-height: 54px
+
+  h3
+    position: absolute
+    margin-top: 100px
+    width: 60%
+    z-index: 100
+    padding-top: 475px
+    right: 25px
+    padding-left: 15%
+
+  &:hover .demonstration-3-text-diller
+    width: 200vh
+
+.order
+  min-height: 693px
+
+  .order-forms
+    display: flex
+    flex-direction: column
+
+    h2
+      font-size: 19px
+      line-height: 31px
+      text-align: center
+      color: #0d0d0d
+      margin-top: 130px
+      text-align: center
+
+    .phone-form
+      margin: 0 auto
+      margin-top: 33px
+      width: 293px
+      height: 39px
+      background: rgba(198, 198, 198, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 200
+      font-size: 15px
+      line-height: 31px
+      text-align: center
+      color: #afafaf
+      border: 0
+
+    .name-form
+      margin: 0 auto
+      margin-top: 30px
+      width: 293px
+      height: 39px
+      background: rgba(198, 198, 198, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 200
+      font-size: 15px
+      line-height: 31px
+      text-align: center
+      color: #afafaf
+      border: 0
+
+    .load
+      margin: 0 auto
+      width: 155.93px
+      height: 37px
+      background: rgba(0, 0, 0, 0)
+      margin-top: 40px
+      cursor: pointer
+
+    .send-order
+      margin: 0 auto
+      margin-top: 20px
+      width: 177px
+      height: 42px
+      background: #fde000
+      box-shadow: 0px 8px 13px rgba(253, 224, 0, 0.28)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      color: #000
+      border: 0
+      cursor: pointer
+
+    p
+      margin-top: 30px
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 200
+      font-size: 10px
+      line-height: 15px
+      text-align: center
+      color: #000
+
+  .order-titles
+    margin-top: 282px
+
+    h3
+      margin-top: 40px
+
+
+
+.modal-send
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  margin: 0 auto
+  padding: 20px 20px
+  padding-top: 70px
+  position: fixed
+  background: #fff
+  height: 90%
+  width: 40%
+  display: flex
+  flex-direction: column
+  z-index: 10001
+  display: none
+
+  h2
+    text-align: center
+    margin-bottom: 10px
+
+  input
+    width: 85%
+    height: 55px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+
+  textarea
+    width: 85%
+    height: 85px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+    padding-top: 10px
+    padding-right: 30px
+    resize: none
+
+  p
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000
+    margin-top: 40px
+
+    a
+      color: #3b3b3b
+
+  button
+    height: 67px
+    width: 70%
+    background: #fde000
+    border: 0
+    margin: 0 auto
+    margin-top: 30px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    cursor: pointer
+
+.close
+  position: absolute
+  height: 20px
+  width: 20px
+  top: 30px
+  right: 30px
+  cursor: pointer
+
+.modal-bg
+  display: none
+  position: fixed
+  width: 200vh
+  height: 200vh
+  z-index: 10000
+  background: #000
+  opacity: 0.8
+
+.mobile
+  display: none
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: #fff
+
+  .menu-mobile
+    height: 73px
+    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+    position: relative
+
+    .logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+
+    .loop-mobile
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      left: 20px
+
+    .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 22px
+      width: 34px
+      height: 18px
+
+      span
+        display: block
+        height: 5px
+        width: 100%
+        background-color: #000
+        margin-top: 4px
+        transition: 0.5s all
+
+    .hamburger-active
+      top: 41px
+
+      span
+        margin-top: -5px
+
+        &:nth-child(1)
+          transform: rotate(-45deg)
+
+        &:nth-child(2)
+          display: none
+
+        &:nth-child(3)
+          transform: rotate(45deg)
+
+  .menu-mobile-items
+    padding-bottom: 100%
+    height: 100vh
+    padding-top: 54px
+    display: none
+    transition: .5s all
+    position: relative
+
+    .call-order
+      width: 181px
+      height: 38px
+      background: #fde000
+      border: 0
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      cursor: pointer
+      display: block
+      margin: 0 auto
+      margin-top: 40px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+    ul li
+      list-style: none
+      margin-top: 15px
+      text-align: center
+
+      a
+        text-decoration: none
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #0b0b0b
+
+        &:hover
+          font-weight: 600
+          font-size: 24px
+          line-height: 29px
+          color: #0b0b0b
+
+.send-mobile
+  display: none
+  margin: 0 auto
+  margin-top: 25px
+  margin-bottom: 40px
+  width: 206px
+  height: 50px
+  background: #fde000
+  box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+  border: 0
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 31px
+  letter-spacing: .205em
+  text-transform: uppercase
+  color: #212121
+
+.loop-modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  padding: 200px 20px
+
+  .loop-modal-content
+    position: relative
+
+    input
+      background: #f2f2f2
+      display: block
+      margin: 0 auto
+      position: relative
+      width: 80%
+      height: 44px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      text-align: center
+      color: #000
+      border: 0
+
+    img
+      position: absolute
+      top: 14px
+      left: 13%
+
+    button
+      display: block
+      margin: 0 auto
+      width: 181px
+      height: 38px
+      border: 0
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      margin-top: 25px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+@media (max-width: 1663px)
+  .menu .menu-items ul
+    margin-left: 138px
+    min-width: 650px
+
+@media (max-width: 1590px)
+  h2
+    font-size: 35px
+
+  .product .small-img-bot .small-img-bot-right .bot-right-text
+    left: 45%
+
+@media (max-width: 1282px)
+  .fixed-button
+    width: 158px
+    height: 83px
+
+  .header-about .header-text h1
+    font-size: 27px
+    line-height: 44px
+
+  .menu
+    padding-left: 0
+
+    .menu-items ul
+      margin-left: 126px
+      min-width: 596px
+
+  .product
+    .big-img .product-img-text
+      h2
+        margin-left: 30px
+
+      p
+        font-size: 15px
+        margin-left: 30px
+
+    .small-img-bot .small-img-bot-left .product-img-text h2
+      font-size: 20px
+
+@media (max-width: 1220px)
+  .product .small-img-bot
+    .small-img-bot-center .product-img-text, .small-img-bot-left .product-img-text
+      left: -120%
+
+    .small-img-bot-center .product-img-text h2, .small-img-bot-left .product-img-text h2
+      margin-top: 60%
+
+    .small-img-bot-center .product-img-text p, .small-img-bot-left .product-img-text p
+      margin-top: 0
+
+  h2
+    font-size: 25px
+
+  .footer-space img
+    bottom: 0
+    right: 0
+
+@media (max-width: 1062px)
+  .menu .call-order
+    font-size: 10px
+    width: 40%
+
+  .demonstration-3-diller h2
+    line-height: 35px
+
+@media (max-width: 992px)
+  .header-about
+    padding-left: 0
+    flex-direction: column
+
+  .mobile
+    display: block
+
+  .menu, .fixed-button, .swiper-arrow, .swiper-pc
+    display: none
+
+  .swiper-mobile
+    display: block
+    width: 100%
+    padding: 0 25px
+    height: 372px
+
+  h1
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    color: #000
+    padding-left: 10%
+    padding-right: 10%
+
+  .header-about .header-text
+    padding-top: 140px
+
+    .look-work
+      display: none
+
+    p
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 25px
+
+    .send
+      margin: 0 auto
+      display: none
+      margin-top: 25px
+
+  .product
+    display: none
+
+    .product-img
+      margin-top: 55px
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      text-align: center
+      color: #000
+
+  .send-mobile, .product-mobile
+    display: block
+
+  .number .number-card
+    border: 0
+
+    .number-text
+      font-size: 14px
+      line-height: 17px
+      padding-left: 20%
+      padding-right: 20%
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 36px
+      line-height: 31px
+      color: #000
+
+      .yellow
+        width: 40%
+        margin-left: 30%
+
+  .order .order-titles
+    display: none
+
+  .demonstration-2-diller h3
+    margin-top: 25px
+
+@media (max-width: 768px)
+  header .header-text
+    padding-top: 67px
+
+    p
+      padding-left: 4%
+      padding-right: 4%
+
+    h1
+      font-size: 27px
+      line-height: 29px
+      padding-left: 4%
+      padding-right: 4%
+
+  .demonstration-1-diller, .demonstration-2-diller, .demonstration-3-diller
+    display: none
+
+  .demonstration-1-mobile-diller, .demonstration-2-mobile-diller, .demonstration-3-mobile-diller
+    display: block
+
+  .number
+    padding-top: 50px
+    margin-bottom: 50px
+
+  footer
+    min-height: 570px
+    padding-top: 20px
+
+    .footer-social
+      margin-top: 20px
+
+    .footer-descr
+      margin-top: 20px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 7px
+      line-height: 11px
+      text-align: center
+      color: #000
+
+      .footer-year
+        margin-top: 10px
+
+    .footer-list-1
+      .footer-title-1, .footer-title-2
+        font-size: 12px
+        display: inline
+        border-right: 1px solid
+        border-color: #acacac
+        color: #acacac
+        cursor: pointer
+        padding-right: 30%
+
+      .footer-title-1:hover, .footer-title-2:hover
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 31px
+        color: #000
+
+      .footer-title-active
+        color: #000
+
+      .footer-title-3
+        font-size: 12px
+        display: inline
+        color: #acacac
+        cursor: pointer
+
+        &:hover
+          font-family: Nunito
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 31px
+          color: #000
+
+      .footer-title-active
+        color: #000
+
+      li
+        margin-top: 0
+        font-size: 13px
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+
+    .footer-list-2
+      margin-top: 20px
+
+      li
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 13px
+        line-height: 31px
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-line
+    width: 184px
+    height: 1px
+    background: #000
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+  .footer-space
+    background: #f2f2f2
+    padding-top: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      position: inherit
+      display: block
+      margin: 0 auto
+      width: 70px
+      height: 31px
+
+    p
+      opacity: 1
+      display: block
+      text-align: center
+      margin: 0 auto
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 9px
+      line-height: 31px
+      color: #000
+
+  .ul-2, .ul-3
+    display: none
+
+  .modal-send
+    width: 90%
+    height: 90%
+
+  .product-mobile .product-mobile-item a h2
+    font-size: 21px
+    width: 100%
+
+@media (max-width: 768px) and (max-width: 450px)
+  .product-mobile .product-mobile-item a p
+    width: 100%
+
+  .swiper-mobile
+    height: 184px
+
+  header
+    min-height: 700px
+
+@media (max-width: 768px) and (max-width: 374px)
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      border: 0
+
+    .footer-title-1, .footer-title-2, .footer-title-3, .footer-title-1:hover, .footer-title-2:hover, .footer-title-3:hover, li a
+      font-size: 9px
+      width: 100%
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  overflow-x: hidden
+
+h2
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 47px
+  line-height: 31px
+  color: #000
+
+h3
+  font-family: Nunito
+  font-style: normal
+  font-weight: 200
+  font-size: 20px
+  line-height: 31px
+  color: #000
+
+.menu
+  box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+  min-height: 86px
+  padding-left: 90px
+  position: fixed
+  z-index: 9900
+  background: #fff
+  width: 100%
+
+  .menu-items
+    display: flex
+
+    .logo
+      position: absolute
+
+    ul
+      display: flex
+      justify-content: space-between
+      padding-left: 0
+      margin-left: 200px
+      min-width: 800px
+      margin-top: 29px
+
+      li
+        list-style: none
+
+        a
+          text-decoration: none
+          font-family: Montserrat
+          font-weight: 400
+          font-size: 14px
+          color: #0b0b0b
+
+        &:hover
+          border-bottom: 3px solid
+
+          a
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            color: #0b0b0b
+
+  input
+    width: 20%
+    height: 36px
+    left: 1140px
+    margin-top: 26px
+    background: #f2f2f2
+    border: 0
+    padding-left: 37px
+    margin-left: 60px
+    background: url("../icons/loop.svg") no-repeat 11px 9px
+    background-color: #f2f2f2
+
+  .call-order
+    margin-left: 25px
+    margin-right: 60px
+    margin-top: 24px
+    width: 10%
+    height: 38px
+    background: #fde000
+    border: 0
+    box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+    font-family: Montserrat
+    font-weight: 600
+    font-size: 13px
+    line-height: 16px
+    color: #000
+    cursor: pointer
+
+  .cart-menu
+    position: absolute
+    right: 17px
+    top: 27px
+    width: 37px
+    height: 31px
+    margin-left: 52px
+
+header
+  display: flex
+  padding-top: 70px
+  min-height: 900px
+  background: url("../img/header-bg.png") center (center / cover) no-repeat
+  padding-left: 90px
+
+  .header-text
+    padding-top: 184px
+    display: flex
+    flex-direction: column
+
+    h1
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 45px
+      line-height: 64px
+      color: #000
+
+    p
+      font-family: Nunito
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      color: #000
+      margin-top: 30px
+
+    .send
+      margin-top: 142px
+      width: 206px
+      height: 50px
+      background: #fde000
+      box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+      border: 0
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 31px
+      letter-spacing: .205em
+      text-transform: uppercase
+      color: #212121
+      cursor: pointer
+
+    .look-work
+      width: 206px
+      height: 50px
+      font-size: 15px
+      line-height: 0
+      color: #000
+      padding-left: 21px
+      padding-top: 24px
+      border-left: .5px solid #000
+      position: relative
+
+      .arrow
+        position: absolute
+        left: -1px
+        bottom: -3px
+
+.cart
+  padding-top: 202px
+
+  h1
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 47px
+    color: #000
+    text-align: center
+
+  h2
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 19px
+    line-height: 31px
+    color: #0d0d0d
+    text-align: center
+
+  .cart-item
+    padding-right: 40px
+    display: flex
+    height: 668px
+    margin-left: 90px
+
+    .check-img
+      display: flex
+      width: 100%
+
+    .checkbox
+      position: absolute
+      z-index: -1
+      opacity: 0
+      top: 50%
+      transform: translate(0, -50%)
+
+      + label
+        display: flex
+        height: 24px
+        align-items: center
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        position: relative
+        top: 50%
+        transform: translate(0, -50%)
+
+        &::before
+          content: ""
+          display: inline
+          width: 22px
+          height: 22px
+          flex-shrink: 0
+          flex-grow: 0
+          border: 1px solid #0d0d0d
+          margin-right: .5em
+          background-repeat: no-repeat
+          background-position: center center
+          background-size: 50% 50%
+
+      &:checked + label::before
+        background: url("../icons/check.svg") center center no-repeat
+
+    .cart-img
+      margin-left: 68px
+      padding-right: 30px
+      width: 100%
+      position: relative
+      top: 50%
+      transform: translate(0, -50%)
+
+    .cart-item-text
+      margin-left: 70px
+      display: flex
+      flex-direction: column
+      position: relative
+      top: 77%
+      transform: translate(0, -50%)
+
+      h3
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        font-size: 19px
+        line-height: 31px
+        color: #0d0d0d
+
+      .vertical-size, .horizontal-size
+        font-family: Nunito
+        font-style: normal
+        font-weight: normal
+        font-size: 19px
+        line-height: 31px
+        color: #0d0d0d
+
+      .vertical-size
+        margin-top: 5px
+
+      .number-cart
+        display: block
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 19px
+        line-height: 31px
+        color: #0d0d0d
+        position: relative
+        padding-left: 28px
+        margin-top: 10px
+
+        .minus
+          position: absolute
+          top: 50%
+          transform: translate(0, -50%)
+          left: 0
+
+        .plus
+          position: absolute
+          top: 50%
+          transform: translate(0, -50%)
+          left: 72px
+
+      .price
+        display: flex
+        margin-top: 20px
+
+        .price-text
+          font-family: Montserrat
+          font-style: normal
+          font-weight: 600
+          font-size: 36px
+          line-height: 31px
+          color: #000
+
+        .price-value
+          font-family: Montserrat
+          font-style: normal
+          font-weight: 600
+          font-size: 36px
+          line-height: 31px
+          color: #000
+          margin-left: 5px
+
+      .exam
+        margin-top: 20px
+        display: flex
+
+        .exam-text
+          font-family: Montserrat
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 31px
+          color: #0d0d0d
+          margin-left: 20px
+
+  .final-price
+    position: relative
+    left: 50%
+    transform: translate(-50%, 0)
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      line-height: 31px
+      color: #000
+      text-align: center
+
+    .final-price-cart
+      display: flex
+      flex-direction: column
+      width: 412px
+      margin: 0 auto
+
+      h3
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        font-size: 19px
+        line-height: 31px
+        color: #0d0d0d
+        margin-top: 130px
+
+      .final-price-cart-item
+        display: flex
+
+        .final-price-cart-item-name
+          font-family: Nunito
+          font-style: normal
+          font-weight: normal
+          font-size: 19px
+          line-height: 31px
+          color: #0d0d0d
+
+        .final-price-cart-item-price
+          font-family: Nunito
+          font-style: normal
+          font-weight: normal
+          font-size: 19px
+          line-height: 31px
+          color: #0d0d0d
+          padding-left: 17%
+
+    .final-price-value
+      text-align: center
+      display: flex
+      margin: 0 auto
+      width: 230px
+      margin-top: 70px
+
+      .final-price-value-text
+        text-align: center
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 36px
+        line-height: 31px
+        color: #000
+
+      .final-price-value-number
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 36px
+        line-height: 31px
+        color: #000
+        padding-left: 10px
+
+  button
+    background: #fde000
+    box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+    width: 210px
+    height: 47px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    display: block
+    margin: 0 auto
+    border: 0
+    margin-top: 30px
+
+  p
+    text-align: center
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 19px
+    line-height: 31px
+    color: #0d0d0d
+    padding: 0 448px
+    margin-top: 30px
+    margin-bottom: 130px
+
+    span
+      font-weight: bold
+
+
+
+.modal-send
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  margin: 0 auto
+  padding: 20px 20px
+  padding-top: 70px
+  position: fixed
+  background: #fff
+  height: 90%
+  width: 40%
+  display: flex
+  flex-direction: column
+  z-index: 10001
+  display: none
+
+  h2
+    text-align: center
+    margin-bottom: 10px
+
+  input
+    width: 85%
+    height: 55px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+
+  textarea
+    width: 85%
+    height: 85px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+    padding-top: 10px
+    padding-right: 30px
+    resize: none
+
+  p
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000
+    margin-top: 40px
+
+    a
+      color: #3b3b3b
+
+  button
+    height: 67px
+    width: 70%
+    background: #fde000
+    border: 0
+    margin: 0 auto
+    margin-top: 30px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    cursor: pointer
+
+.close
+  position: absolute
+  height: 20px
+  width: 20px
+  top: 30px
+  right: 30px
+  cursor: pointer
+
+.modal-bg
+  display: none
+  position: fixed
+  width: 200vh
+  height: 200vh
+  z-index: 10000
+  background: #000
+  opacity: 0.8
+
+.mobile
+  display: none
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: #fff
+
+  .menu-mobile
+    height: 73px
+    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+    position: relative
+
+    .logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+
+    .loop-mobile
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      left: 20px
+
+    .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 22px
+      width: 34px
+      height: 18px
+
+      span
+        display: block
+        height: 5px
+        width: 100%
+        background-color: #000
+        margin-top: 4px
+        transition: 0.5s all
+
+    .hamburger-active
+      top: 41px
+
+      span
+        margin-top: -5px
+
+        &:nth-child(1)
+          transform: rotate(-45deg)
+
+        &:nth-child(2)
+          display: none
+
+        &:nth-child(3)
+          transform: rotate(45deg)
+
+  .menu-mobile-items
+    padding-bottom: 100%
+    height: 100vh
+    padding-top: 54px
+    display: none
+    transition: .5s all
+    position: relative
+
+    .call-order
+      width: 181px
+      height: 38px
+      background: #fde000
+      border: 0
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      cursor: pointer
+      display: block
+      margin: 0 auto
+      margin-top: 40px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+    ul li
+      list-style: none
+      margin-top: 15px
+      text-align: center
+
+      a
+        text-decoration: none
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #0b0b0b
+
+        &:hover
+          font-weight: 600
+          font-size: 24px
+          line-height: 29px
+          color: #0b0b0b
+
+.send-mobile
+  display: none
+  margin: 0 auto
+  margin-top: 25px
+  margin-bottom: 40px
+  width: 206px
+  height: 50px
+  background: #fde000
+  box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+  border: 0
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 31px
+  letter-spacing: .205em
+  text-transform: uppercase
+  color: #212121
+
+.loop-modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  padding: 200px 20px
+
+  .loop-modal-content
+    position: relative
+
+    input
+      background: #f2f2f2
+      display: block
+      margin: 0 auto
+      position: relative
+      width: 80%
+      height: 44px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      text-align: center
+      color: #000
+      border: 0
+
+    img
+      position: absolute
+      top: 14px
+      left: 13%
+
+    button
+      display: block
+      margin: 0 auto
+      width: 181px
+      height: 38px
+      border: 0
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      margin-top: 25px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+@media (max-width: 1663px)
+  .menu .menu-items ul
+    margin-left: 138px
+    min-width: 650px
+
+@media (max-width: 1590px)
+  h2
+    font-size: 35px
+
+@media (max-width: 1439px)
+  .cart .cart-item
+    height: 500px
+
+@media (max-width: 1282px)
+  .fixed-button
+    width: 158px
+    height: 83px
+
+  header .header-text h1
+    font-size: 27px
+    line-height: 44px
+
+  .menu
+    padding-left: 0
+
+    .menu-items ul
+      margin-left: 126px
+      min-width: 596px
+
+  .cart
+    .cart-item
+      height: 420px
+
+    .final-price h2
+      margin-top: 130px
+
+    p
+      padding: 0 200px
+
+@media (max-width: 1220px)
+  h2
+    font-size: 25px
+
+  .footer-space img
+    bottom: 0
+    right: 0
+
+@media (max-width: 1062px)
+  .menu .call-order
+    font-size: 10px
+    width: 40%
+
+@media (max-width: 992px)
+  .cart p
+    margin-bottom: 55px
+    padding: 0 60px
+
+  .ul-2, .ul-3
+    display: none
+
+  header
+    padding-left: 0
+    flex-direction: column
+
+  .mobile
+    display: block
+
+  .menu, .fixed-button
+    display: none
+
+  h1
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    color: #000
+    padding-left: 10%
+    padding-right: 10%
+
+  header .header-text
+    padding-top: 140px
+
+    .look-work
+      display: none
+
+    p
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 25px
+
+    .send
+      margin: 0 auto
+      display: none
+      margin-top: 25px
+
+  .send-mobile, .product-mobile
+    display: block
+
+  .cart
+    h1
+      font-size: 24px
+
+    h2
+      display: none
+
+    .cart-item
+      flex-direction: column
+      margin-left: 20px
+      margin-right: 40px
+      margin-bottom: 440px
+
+      .cart-item-text
+        position: static
+        margin-left: 0
+        margin-top: 130px
+
+    .final-price
+      transform: translate(0, 0)
+      left: 0
+      position: static
+      margin-top: 400px
+      margin-left: 20px
+
+      .final-price-cart
+        margin: 0
+
+      .final-price-value-text, .final-price-value-number
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 31px
+        color: #000
+
+  footer
+    min-height: 570px
+    padding-top: 20px
+
+    .footer-social
+      margin-top: 20px
+
+    .footer-descr
+      margin-top: 20px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 7px
+      line-height: 11px
+      text-align: center
+      color: #000
+
+      .footer-year
+        margin-top: 10px
+
+    .footer-list-1
+      .footer-title-1, .footer-title-2
+        font-size: 12px
+        display: inline
+        border-right: 1px solid
+        border-color: #acacac
+        color: #acacac
+        cursor: pointer
+        padding-right: 40%
+
+      .footer-title-1:hover, .footer-title-2:hover
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 31px
+        color: #000
+
+      .footer-title-active
+        color: #000
+
+      .footer-title-3
+        font-size: 12px
+        display: inline
+        color: #acacac
+        cursor: pointer
+
+        &:hover
+          font-family: Nunito
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 31px
+          color: #000
+
+      .footer-title-active
+        color: #000
+
+      li
+        margin-top: 0
+        font-size: 13px
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+
+    .footer-list-2
+      margin-top: 20px
+
+      li
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 13px
+        line-height: 31px
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-line
+    width: 184px
+    height: 1px
+    background: #000
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+  .footer-space
+    background: #f2f2f2
+    padding-top: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      position: inherit
+      display: block
+      margin: 0 auto
+      width: 70px
+      height: 31px
+
+    p
+      opacity: 1
+      display: block
+      text-align: center
+      margin: 0 auto
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 9px
+      line-height: 31px
+      color: #000
+
+  .ul-2, .ul-3
+    display: none
+
+@media (max-width: 768px)
+  .cart .cart-item
+    margin-bottom: 300px
+
+  h1
+    margin-bottom: 59px
+
+  .cart
+    .final-price
+      margin-top: 200px
+
+    p
+      padding: 0 23px
+      font-size: 14px
+      line-height: 13.5px
+
+  header .header-text
+    padding-top: 67px
+
+    p
+      padding-left: 4%
+      padding-right: 4%
+
+    h1
+      font-size: 27px
+      line-height: 29px
+      padding-left: 4%
+      padding-right: 4%
+
+  .modal-send
+    width: 90%
+    height: 90%
+
+  .product-mobile .product-mobile-item a h2
+    font-size: 21px
+    width: 100%
+
+@media (max-width: 450px)
+  .cart
+    .cart-item
+      margin-bottom: 100px
+
+    .final-price .final-price-cart
+      width: 280px
+
+    .cart-item
+      .cart-item-text
+        .exam .exam-text
+          font-size: 12px
+          line-height: 17px
+
+        .price
+          .price-text, .price-value
+            font-size: 25px
+
+      .cart-img
+        padding-right: 0
+        margin-left: 0
+        margin-bottom: 30px
+
+    .final-price
+      margin-top: 0
+
+  header
+    min-height: 700px
+
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      padding-right: 30%
+
+@media (max-width: 374px)
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      border: 0
+
+    .footer-title-1, .footer-title-2, .footer-title-3, .footer-title-1:hover, .footer-title-2:hover, .footer-title-3:hover, li a
+      font-size: 9px
+      width: 100%
+
+.header-case
+  display: flex
+  padding-top: 70px
+  min-height: 666px
+  background: url("../img/header-case-bg.png") center (center / cover) no-repeat
+  padding-left: 90px
+
+@media (max-width: 992px)
+  .header-case
+    padding-left: 0
+
+header .header-text
+  padding-top: 184px
+  display: flex
+  flex-direction: column
+
+  h1
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 45px
+    line-height: 64px
+    color: #000
+
+  p
+    font-family: Nunito
+    font-weight: 200
+    font-size: 21px
+    line-height: 31px
+    color: #000
+    margin-top: 30px
+
+  .send
+    margin-top: 142px
+    width: 206px
+    height: 50px
+    background: #fde000
+    box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+    border: 0
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 31px
+    letter-spacing: .205em
+    color: #212121
+    cursor: pointer
+
+  .look-work
+    width: 206px
+    height: 50px
+    font-size: 15px
+    line-height: 0
+    color: #000
+    padding-left: 21px
+    padding-top: 24px
+    border-left: .5px solid #000
+    position: relative
+
+    .arrow
+      position: absolute
+      left: -1px
+      bottom: -3px
+
+.number
+  padding-top: 100px
+  margin-bottom: 130px
+
+  .number-card
+    text-align: center
+    border-right: 2px solid
+
+    h2
+      text-align: center
+      position: relative
+      z-index: 1
+      padding-top: 30px
+
+      .yellow
+        position: absolute
+        width: 71%
+        height: 16px
+        background: #fde000
+        bottom: 0
+        z-index: -1
+        margin-left: 15%
+
+    .number-text
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 20px
+      line-height: 31px
+      text-align: center
+      color: #000
+      margin-top: 40px
+      margin-bottom: 10px
+
+.number-card:last-child
+  border-right: 0
+
+.cases
+  background: #f5f5f5
+  padding-top: 92px
+  padding-bottom: 15px
+  display: flex
+
+  .case
+    width: 50%
+    padding-left: 135px
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 47px
+      line-height: 31px
+      color: #000
+
+    p
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 31px
+      color: #000
+      padding: 23px 60px 0 0
+
+    img
+      display: block
+      margin: 0 auto
+      margin-top: 108px
+
+
+
+.modal-send
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  margin: 0 auto
+  padding: 20px 20px
+  padding-top: 70px
+  position: fixed
+  background: #fff
+  height: 90%
+  width: 40%
+  display: flex
+  flex-direction: column
+  z-index: 10001
+  display: none
+
+  h2
+    text-align: center
+    margin-bottom: 10px
+
+  input
+    width: 85%
+    height: 55px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+
+  textarea
+    width: 85%
+    height: 85px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+    padding-top: 10px
+    padding-right: 30px
+    resize: none
+
+  p
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000
+    margin-top: 40px
+
+    a
+      color: #3b3b3b
+
+  button
+    height: 67px
+    width: 70%
+    background: #fde000
+    border: 0
+    margin: 0 auto
+    margin-top: 30px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    cursor: pointer
+
+.close
+  position: absolute
+  height: 20px
+  width: 20px
+  top: 30px
+  right: 30px
+  cursor: pointer
+
+.modal-bg
+  display: none
+  position: fixed
+  width: 200vh
+  height: 200vh
+  z-index: 10000
+  background: #000
+  opacity: 0.8
+
+.mobile
+  display: none
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: #fff
+
+  .menu-mobile
+    height: 73px
+    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+    position: relative
+
+    .logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+
+    .loop-mobile
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      left: 20px
+
+    .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 22px
+      width: 34px
+      height: 18px
+
+      span
+        display: block
+        height: 5px
+        width: 100%
+        background-color: #000
+        margin-top: 4px
+        transition: 0.5s all
+
+    .hamburger-active
+      top: 41px
+
+      span
+        margin-top: -5px
+
+        &:nth-child(1)
+          transform: rotate(-45deg)
+
+        &:nth-child(2)
+          display: none
+
+        &:nth-child(3)
+          transform: rotate(45deg)
+
+  .menu-mobile-items
+    padding-bottom: 100%
+    height: 100vh
+    padding-top: 54px
+    display: none
+    transition: .5s all
+    position: relative
+
+    .call-order
+      width: 181px
+      height: 38px
+      background: #fde000
+      border: 0
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      cursor: pointer
+      display: block
+      margin: 0 auto
+      margin-top: 40px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+    ul li
+      list-style: none
+      margin-top: 15px
+      text-align: center
+
+      a
+        text-decoration: none
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #0b0b0b
+
+        &:hover
+          font-weight: 600
+          font-size: 24px
+          line-height: 29px
+          color: #0b0b0b
+
+.send-mobile
+  display: none
+  margin: 0 auto
+  margin-top: 25px
+  margin-bottom: 40px
+  width: 206px
+  height: 50px
+  background: #fde000
+  box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+  border: 0
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 31px
+  letter-spacing: .205em
+  text-transform: uppercase
+  color: #212121
+
+.loop-modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  padding: 200px 20px
+
+  .loop-modal-content
+    position: relative
+
+    input
+      background: #f2f2f2
+      display: block
+      margin: 0 auto
+      position: relative
+      width: 80%
+      height: 44px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      text-align: center
+      color: #000
+      border: 0
+
+    img
+      position: absolute
+      top: 14px
+      left: 13%
+
+    button
+      display: block
+      margin: 0 auto
+      width: 181px
+      height: 38px
+      border: 0
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      margin-top: 25px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+@media (max-width: 1663px)
+  .menu .menu-items ul
+    margin-left: 138px
+    min-width: 650px
+
+@media (max-width: 1590px)
+  .header-text-right
+    padding-left: 15%
+
+  h2
+    font-size: 35px
+
+  .product .small-img-bot .small-img-bot-right .bot-right-text
+    left: 45%
+
+@media (max-width: 1330px)
+  .header-text-right
+    display: none
+
+@media (max-width: 1282px)
+  .fixed-button
+    width: 158px
+    height: 83px
+
+  header .header-text
+    h1
+      font-size: 27px
+      line-height: 44px
+
+    p
+      width: 60%
+
+  .menu
+    padding-left: 0
+
+    .menu-items ul
+      margin-left: 126px
+      min-width: 596px
+
+  .product
+    .big-img .product-img-text
+      h2
+        margin-left: 30px
+
+      p
+        font-size: 15px
+        margin-left: 30px
+
+    .small-img-bot .small-img-bot-left .product-img-text h2
+      font-size: 20px
+
+@media (max-width: 1220px)
+  .cases
+    flex-direction: column
+
+    .case
+      width: 100%
+      margin-top: 90px
+      padding-right: 135px
+
+  .product .small-img-bot
+    .small-img-bot-center .product-img-text, .small-img-bot-left .product-img-text
+      left: -120%
+
+    .small-img-bot-center .product-img-text h2, .small-img-bot-left .product-img-text h2
+      margin-top: 60%
+
+    .small-img-bot-center .product-img-text p, .small-img-bot-left .product-img-text p
+      margin-top: 0
+
+  h2
+    font-size: 25px
+
+  .footer-space img
+    bottom: 0
+    right: 0
+
+@media (max-width: 1062px)
+  .menu .call-order
+    font-size: 10px
+    width: 40%
+
+  .demonstration-3-diller h2
+    line-height: 35px
+
+@media (max-width: 992px)
+  .cases .case
+    padding: 0 50px
+
+    p
+      padding-right: 0
+
+    img
+      width: 100%
+
+  .header-text-right
+    display: none
+
+  header
+    min-height: 500px
+    padding-left: 0
+    flex-direction: column
+
+  .mobile
+    display: block
+
+  .menu, .fixed-button, .swiper-arrow, .swiper-pc
+    display: none
+
+  .swiper-mobile
+    display: block
+    width: 100%
+    padding: 0 25px
+    height: 372px
+
+  h1
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    color: #000
+    padding-left: 10%
+    padding-right: 10%
+
+  header .header-text
+    padding-top: 140px
+
+    .look-work
+      display: none
+
+    p
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 25px
+
+    .send
+      margin: 0 auto
+      display: none
+      margin-top: 25px
+
+  .product
+    display: none
+
+    .product-img
+      margin-top: 55px
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      text-align: center
+      color: #000
+
+  .send-mobile, .product-mobile
+    display: block
+
+  .number .number-card
+    border: 0
+
+    .number-text
+      font-size: 14px
+      line-height: 17px
+      padding-left: 20%
+      padding-right: 20%
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 36px
+      line-height: 31px
+      color: #000
+
+      .yellow
+        width: 40%
+        margin-left: 30%
+
+  .order .order-titles
+    display: none
+
+  .demonstration-2-diller h3
+    margin-top: 25px
+
+  header .header-text
+    padding-top: 115px
+
+    p
+      padding-left: 4%
+      padding-right: 4%
+
+    h1
+      font-size: 27px
+      line-height: 29px
+      padding-left: 4%
+      padding-right: 4%
+
+  .demonstration-1-diller, .demonstration-2-diller, .demonstration-3-diller
+    display: none
+
+  .demonstration-1-mobile-diller, .demonstration-2-mobile-diller, .demonstration-3-mobile-diller
+    display: block
+
+  .number
+    padding-top: 50px
+    margin-bottom: 50px
+
+  footer
+    min-height: 570px
+    padding-top: 20px
+
+    .footer-social
+      margin-top: 20px
+
+    .footer-descr
+      margin-top: 20px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 7px
+      line-height: 11px
+      text-align: center
+      color: #000
+
+      .footer-year
+        margin-top: 10px
+
+    .footer-list-1
+      .footer-title-1, .footer-title-2
+        font-size: 12px
+        display: inline
+        border-right: 1px solid
+        border-color: #acacac
+        color: #acacac
+        cursor: pointer
+        padding-right: 30%
+
+      .footer-title-1:hover, .footer-title-2:hover
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 31px
+        color: #000
+
+      .footer-title-active
+        color: #000
+
+      .footer-title-3
+        font-size: 12px
+        display: inline
+        color: #acacac
+        cursor: pointer
+
+        &:hover
+          font-family: Nunito
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 31px
+          color: #000
+
+      .footer-title-active
+        color: #000
+
+      li
+        margin-top: 0
+        font-size: 13px
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+
+    .footer-list-2
+      margin-top: 20px
+
+      li
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 13px
+        line-height: 31px
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-line
+    width: 184px
+    height: 1px
+    background: #000
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+  .footer-space
+    background: #f2f2f2
+    padding-top: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      position: inherit
+      display: block
+      margin: 0 auto
+      width: 70px
+      height: 31px
+
+    p
+      opacity: 1
+      display: block
+      text-align: center
+      margin: 0 auto
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 9px
+      line-height: 31px
+      color: #000
+
+  .ul-2, .ul-3
+    display: none
+
+  .modal-send
+    width: 90%
+    height: 90%
+
+  .product-mobile .product-mobile-item a h2
+    font-size: 21px
+    width: 100%
+
+@media (max-width: 992px) and (max-width: 450px)
+  .cases .case
+    padding: 0 20px
+
+  .product-mobile .product-mobile-item a p
+    width: 100%
+
+  header
+    min-height: 500px
+
+@media (max-width: 992px) and (max-width: 374px)
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      border: 0
+
+    .footer-title-1, .footer-title-2, .footer-title-3, .footer-title-1:hover, .footer-title-2:hover, .footer-title-3:hover, li a
+      font-size: 9px
+      width: 100%
+
+header
+  display: flex
+  padding-top: 70px
+  min-height: 900px
+  background: url("../img/header-bg.png") center (center / cover) no-repeat
+  padding-left: 90px
+
+  .header-text
+    padding-top: 184px
+    display: flex
+    flex-direction: column
+
+    h1
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 45px
+      line-height: 64px
+      color: #000
+
+    p
+      font-family: Nunito
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      color: #000
+      margin-top: 30px
+
+    .send
+      margin-top: 142px
+      width: 206px
+      height: 50px
+      background: #fde000
+      box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+      border: 0
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 31px
+      letter-spacing: .205em
+      text-transform: uppercase
+      color: #212121
+      cursor: pointer
+
+    .look-work
+      width: 206px
+      height: 50px
+      font-size: 15px
+      line-height: 0
+      color: #000
+      padding-left: 21px
+      padding-top: 24px
+      border-left: .5px solid #000
+      position: relative
+
+      .arrow
+        position: absolute
+        left: -1px
+        bottom: -3px
+
+.catalog
+  min-height: 1018px
+  padding: 202px 90px
+
+  h1
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 47px
+    line-height: 31px
+    color: #000
+    text-align: center
+
+  .catalog-items
+    padding-top: 100px
+
+    .catalog-title-block
+      .catalog-title
+        list-style: none
+        cursor: pointer
+        font-family: Nunito
+        font-style: normal
+        font-weight: normal
+        font-size: 19px
+        line-height: 31px
+        margin-top: 25px
+        border-bottom: 1px solid #d8d8d8
+        position: relative
+
+        .catalog-arrow-pc
+          display: none
+          padding-top: 13px
+          padding-left: 30px
+          position: absolute
+
+        &:hover
+          font-weight: 600
+
+          .catalog-arrow-pc
+            display: inline
+
+      .catalog-title-active
+        font-weight: 600
+
+        .catalog-arrow-pc
+          display: inline
+
+      .catalog-subtitles
+        display: none
+        padding-left: 407px
+
+        li
+          list-style: none
+          font-family: Nunito
+          font-style: normal
+          font-weight: normal
+          font-size: 19px
+          line-height: 31px
+          color: #0d0d0d
+          margin-top: 25px
+          border-bottom: 1px solid #d8d8d8
+          cursor: pointer
+
+          &:hover
+            font-weight: 600
+
+      .catalog-subtitle-active
+        display: block
+        position: absolute
+
+  .catalog-arrow-mobile
+    display: none
+    position: absolute
+    top: 30%
+    right: 1%
+
+  .catalog-title-block
+    display: flex
+
+  .product
+    padding-left: 40px
+
+    img
+      margin-top: 70px
+      padding-left: 40px
+      width: 100%
+
+    h3
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 22px
+      color: #000
+
+    button
+      width: 210px
+      height: 47px
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      border: 0
+      margin-top: 20px
+      cursor: pointer
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      color: #000
+
+
+
+.modal-send
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  margin: 0 auto
+  padding: 20px 20px
+  padding-top: 70px
+  position: fixed
+  background: #fff
+  height: 90%
+  width: 40%
+  display: flex
+  flex-direction: column
+  z-index: 10001
+  display: none
+
+  h2
+    text-align: center
+    margin-bottom: 10px
+
+  input
+    width: 85%
+    height: 55px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+
+  textarea
+    width: 85%
+    height: 85px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+    padding-top: 10px
+    padding-right: 30px
+    resize: none
+
+  p
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000
+    margin-top: 40px
+
+    a
+      color: #3b3b3b
+
+  button
+    height: 67px
+    width: 70%
+    background: #fde000
+    border: 0
+    margin: 0 auto
+    margin-top: 30px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    cursor: pointer
+
+.close
+  position: absolute
+  height: 20px
+  width: 20px
+  top: 30px
+  right: 30px
+  cursor: pointer
+
+.modal-bg
+  display: none
+  position: fixed
+  width: 200vh
+  height: 200vh
+  z-index: 10000
+  background: #000
+  opacity: 0.8
+
+.mobile
+  display: none
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: #fff
+
+  .menu-mobile
+    height: 73px
+    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+    position: relative
+
+    .logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+
+    .loop-mobile
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      left: 20px
+
+    .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 22px
+      width: 34px
+      height: 18px
+
+      span
+        display: block
+        height: 5px
+        width: 100%
+        background-color: #000
+        margin-top: 4px
+        transition: 0.5s all
+
+    .hamburger-active
+      top: 41px
+
+      span
+        margin-top: -5px
+
+        &:nth-child(1)
+          transform: rotate(-45deg)
+
+        &:nth-child(2)
+          display: none
+
+        &:nth-child(3)
+          transform: rotate(45deg)
+
+  .menu-mobile-items
+    padding-bottom: 100%
+    height: 100vh
+    padding-top: 54px
+    display: none
+    transition: .5s all
+    position: relative
+
+    .call-order
+      width: 181px
+      height: 38px
+      background: #fde000
+      border: 0
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      cursor: pointer
+      display: block
+      margin: 0 auto
+      margin-top: 40px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+    ul li
+      list-style: none
+      margin-top: 15px
+      text-align: center
+
+      a
+        text-decoration: none
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #0b0b0b
+
+        &:hover
+          font-weight: 600
+          font-size: 24px
+          line-height: 29px
+          color: #0b0b0b
+
+.send-mobile
+  display: none
+  margin: 0 auto
+  margin-top: 25px
+  margin-bottom: 40px
+  width: 206px
+  height: 50px
+  background: #fde000
+  box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+  border: 0
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 31px
+  letter-spacing: .205em
+  text-transform: uppercase
+  color: #212121
+
+.loop-modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  padding: 200px 20px
+
+  .loop-modal-content
+    position: relative
+
+    input
+      background: #f2f2f2
+      display: block
+      margin: 0 auto
+      position: relative
+      width: 80%
+      height: 44px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      text-align: center
+      color: #000
+      border: 0
+
+    img
+      position: absolute
+      top: 14px
+      left: 13%
+
+    button
+      display: block
+      margin: 0 auto
+      width: 181px
+      height: 38px
+      border: 0
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      margin-top: 25px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+@media (max-width: 1663px)
+  .menu .menu-items ul
+    margin-left: 138px
+    min-width: 650px
+
+@media (max-width: 1590px)
+  h2
+    font-size: 35px
+
+@media (max-width: 1439px)
+  .catalog-title-block
+    flex-direction: column
+
+  .catalog .catalog-items .catalog-title-block
+    .catalog-subtitle-active
+      display: block
+      position: static
+
+    .catalog-subtitles
+      padding-left: 0px
+      padding-bottom: 48px
+
+    .catalog-title-active .catalog-arrow-pc, .catalog-title:hover .catalog-arrow-pc
+      display: none
+
+    .catalog-title-active .catalog-arrow-mobile, .catalog-title:hover .catalog-arrow-mobile
+      display: block
+
+@media (max-width: 1282px)
+  .fixed-button
+    width: 158px
+    height: 83px
+
+  header .header-text h1
+    font-size: 27px
+    line-height: 44px
+
+  .menu
+    padding-left: 0
+
+    .menu-items ul
+      margin-left: 126px
+      min-width: 596px
+
+@media (max-width: 1220px)
+  h2
+    font-size: 25px
+
+  .footer-space img
+    bottom: 0
+    right: 0
+
+@media (max-width: 1062px)
+  .menu .call-order
+    font-size: 10px
+    width: 40%
+
+@media (max-width: 992px)
+  .catalog .product
+    img
+      padding-left: 0
+
+    h3
+      text-align: center
+
+    button
+      display: block
+      margin: 0 auto
+      margin-top: 20px
+
+  .ul-2, .ul-3
+    display: none
+
+  header
+    padding-left: 0
+    flex-direction: column
+
+  .mobile
+    display: block
+
+  .menu, .fixed-button
+    display: none
+
+  h1
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    color: #000
+    padding-left: 10%
+    padding-right: 10%
+
+  header .header-text
+    padding-top: 140px
+
+    .look-work
+      display: none
+
+    p
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 25px
+
+    .send
+      margin: 0 auto
+      display: none
+      margin-top: 25px
+
+  .send-mobile, .product-mobile
+    display: block
+
+  footer
+    min-height: 570px
+    padding-top: 20px
+
+    .footer-social
+      margin-top: 20px
+
+    .footer-descr
+      margin-top: 20px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 7px
+      line-height: 11px
+      text-align: center
+      color: #000
+
+      .footer-year
+        margin-top: 10px
+
+    .footer-list-1
+      .footer-title-1, .footer-title-2
+        font-size: 12px
+        display: inline
+        border-right: 1px solid
+        border-color: #acacac
+        color: #acacac
+        cursor: pointer
+        padding-right: 40%
+
+      .footer-title-1:hover, .footer-title-2:hover
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 31px
+        color: #000
+
+      .footer-title-active
+        color: #000
+
+      .footer-title-3
+        font-size: 12px
+        display: inline
+        color: #acacac
+        cursor: pointer
+
+        &:hover
+          font-family: Nunito
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 31px
+          color: #000
+
+      .footer-title-active
+        color: #000
+
+      li
+        margin-top: 0
+        font-size: 13px
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+
+    .footer-list-2
+      margin-top: 20px
+
+      li
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 13px
+        line-height: 31px
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-line
+    width: 184px
+    height: 1px
+    background: #000
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+  .footer-space
+    background: #f2f2f2
+    padding-top: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      position: inherit
+      display: block
+      margin: 0 auto
+      width: 70px
+      height: 31px
+
+    p
+      opacity: 1
+      display: block
+      text-align: center
+      margin: 0 auto
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 9px
+      line-height: 31px
+      color: #000
+
+  .ul-2, .ul-3
+    display: none
+
+@media (max-width: 768px)
+  header .header-text
+    padding-top: 67px
+
+    p
+      padding-left: 4%
+      padding-right: 4%
+
+    h1
+      font-size: 27px
+      line-height: 29px
+      padding-left: 4%
+      padding-right: 4%
+
+  .modal-send
+    width: 90%
+    height: 90%
+
+  .product-mobile .product-mobile-item a h2
+    font-size: 21px
+    width: 100%
+
+@media (max-width: 450px)
+  header
+    min-height: 700px
+
+  .catalog
+    padding: 152px 15px
+
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      padding-right: 30%
+
+@media (max-width: 374px)
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      border: 0
+
+    .footer-title-1, .footer-title-2, .footer-title-3, .footer-title-1:hover, .footer-title-2:hover, .footer-title-3:hover, li a
+      font-size: 9px
+      width: 100%
+
+header
+  display: flex
+  padding-top: 70px
+  min-height: 900px
+  background: url("../img/header-bg.png") center (center / cover) no-repeat
+  padding-left: 90px
+
+  .header-text
+    padding-top: 184px
+    display: flex
+    flex-direction: column
+
+    h1
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 45px
+      line-height: 64px
+      color: #000
+
+    p
+      font-family: Nunito
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      color: #000
+      margin-top: 30px
+
+    .send
+      margin-top: 142px
+      width: 206px
+      height: 50px
+      background: #fde000
+      box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+      border: 0
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 31px
+      letter-spacing: .205em
+      text-transform: uppercase
+      color: #212121
+      cursor: pointer
+
+    .look-work
+      width: 206px
+      height: 50px
+      font-size: 15px
+      line-height: 0
+      color: #000
+      padding-left: 21px
+      padding-top: 24px
+      border-left: .5px solid #000
+      position: relative
+
+      .arrow
+        position: absolute
+        left: -1px
+        bottom: -3px
+
+.contacts
+  padding: 200px 0px 200px 90px
+  min-height: 1757px
+
+  h1
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 47px
+    line-height: 50px
+    color: #000
+    text-align: center
+
+  h3
+    font-family: Nunito
+    font-style: normal
+    font-weight: 400
+    font-size: 19px
+    margin-top: 0px
+    text-align: center
+    color: #0d0d0d
+
+  .contacts-card
+    display: flex
+
+    .contacts-card-text
+      width: 50%
+      padding: 155px 40px 155px 0px
+
+      .text
+        margin-top: 25px
+        position: relative
+        font-family: Nunito
+        font-style: normal
+        font-weight: normal
+        font-size: 19px
+        line-height: 31px
+        color: #0d0d0d
+
+        img
+          position: absolute
+          left: -30px
+          top: 4px
+
+    .contacts-card-map
+      width: 100%
+      height: 530px
+      background: #000
+      margin-top: 70px
+
+  h2
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 47px
+    line-height: 31px
+    color: #000
+    text-align: center
+    margin-top: 70px
+
+  .img-social
+    display: block
+    margin-top: 70px
+    text-align: center
+
+    a
+      margin-left: 95px
+
+      img
+        width: 50px
+        height: 50px
+
+    span a
+      margin-left: 0
+
+
+
+.modal-send
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  margin: 0 auto
+  padding: 20px 20px
+  padding-top: 70px
+  position: fixed
+  background: #fff
+  height: 90%
+  width: 40%
+  display: flex
+  flex-direction: column
+  z-index: 10001
+  display: none
+
+  h2
+    text-align: center
+    margin-bottom: 10px
+
+  input
+    width: 85%
+    height: 55px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+
+  textarea
+    width: 85%
+    height: 85px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+    padding-top: 10px
+    padding-right: 30px
+    resize: none
+
+  p
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000
+    margin-top: 40px
+
+    a
+      color: #3b3b3b
+
+  button
+    height: 67px
+    width: 70%
+    background: #fde000
+    border: 0
+    margin: 0 auto
+    margin-top: 30px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    cursor: pointer
+
+.close
+  position: absolute
+  height: 20px
+  width: 20px
+  top: 30px
+  right: 30px
+  cursor: pointer
+
+.modal-bg
+  display: none
+  position: fixed
+  width: 200vh
+  height: 200vh
+  z-index: 10000
+  background: #000
+  opacity: 0.8
+
+.mobile
+  display: none
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: #fff
+
+  .menu-mobile
+    height: 73px
+    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+    position: relative
+
+    .logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+
+    .loop-mobile
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      left: 20px
+
+    .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 22px
+      width: 34px
+      height: 18px
+
+      span
+        display: block
+        height: 5px
+        width: 100%
+        background-color: #000
+        margin-top: 4px
+        transition: 0.5s all
+
+    .hamburger-active
+      top: 41px
+
+      span
+        margin-top: -5px
+
+        &:nth-child(1)
+          transform: rotate(-45deg)
+
+        &:nth-child(2)
+          display: none
+
+        &:nth-child(3)
+          transform: rotate(45deg)
+
+  .menu-mobile-items
+    padding-bottom: 100%
+    height: 100vh
+    padding-top: 54px
+    display: none
+    transition: .5s all
+    position: relative
+
+    .call-order
+      width: 181px
+      height: 38px
+      background: #fde000
+      border: 0
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      cursor: pointer
+      display: block
+      margin: 0 auto
+      margin-top: 40px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+    ul li
+      list-style: none
+      margin-top: 15px
+      text-align: center
+
+      a
+        text-decoration: none
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #0b0b0b
+
+        &:hover
+          font-weight: 600
+          font-size: 24px
+          line-height: 29px
+          color: #0b0b0b
+
+.send-mobile
+  display: none
+  margin: 0 auto
+  margin-top: 25px
+  margin-bottom: 40px
+  width: 206px
+  height: 50px
+  background: #fde000
+  box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+  border: 0
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 31px
+  letter-spacing: .205em
+  text-transform: uppercase
+  color: #212121
+
+.loop-modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  padding: 200px 20px
+
+  .loop-modal-content
+    position: relative
+
+    input
+      background: #f2f2f2
+      display: block
+      margin: 0 auto
+      position: relative
+      width: 80%
+      height: 44px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      text-align: center
+      color: #000
+      border: 0
+
+    img
+      position: absolute
+      top: 14px
+      left: 13%
+
+    button
+      display: block
+      margin: 0 auto
+      width: 181px
+      height: 38px
+      border: 0
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      margin-top: 25px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+@media (max-width: 1663px)
+  .menu .menu-items ul
+    margin-left: 138px
+    min-width: 650px
+
+@media (max-width: 1590px)
+  h2
+    font-size: 35px
+
+@media (max-width: 1282px)
+  .fixed-button
+    width: 158px
+    height: 83px
+
+  header .header-text h1
+    font-size: 27px
+    line-height: 44px
+
+  .menu
+    padding-left: 0
+
+    .menu-items ul
+      margin-left: 126px
+      min-width: 596px
+
+@media (max-width: 1220px)
+  h2
+    font-size: 25px
+
+  .footer-space img
+    bottom: 0
+    right: 0
+
+@media (max-width: 1062px)
+  .menu .call-order
+    font-size: 10px
+    width: 40%
+
+@media (max-width: 992px)
+  .ul-2, .ul-3
+    display: none
+
+  header
+    padding-left: 0
+    flex-direction: column
+
+  .mobile
+    display: block
+
+  .menu, .fixed-button
+    display: none
+
+  h1
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    color: #000
+    padding-left: 10%
+    padding-right: 10%
+
+  header .header-text
+    padding-top: 140px
+
+    .look-work
+      display: none
+
+    p
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 25px
+
+    .send
+      margin: 0 auto
+      display: none
+      margin-top: 25px
+
+  .send-mobile, .product-mobile
+    display: block
+
+  footer
+    min-height: 570px
+    padding-top: 20px
+
+    .footer-social
+      margin-top: 20px
+
+    .footer-descr
+      margin-top: 20px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 7px
+      line-height: 11px
+      text-align: center
+      color: #000
+
+      .footer-year
+        margin-top: 10px
+
+    .footer-list-1
+      .footer-title-1, .footer-title-2
+        font-size: 12px
+        display: inline
+        border-right: 1px solid
+        border-color: #acacac
+        color: #acacac
+        cursor: pointer
+        padding-right: 40%
+
+      .footer-title-1:hover, .footer-title-2:hover
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 31px
+        color: #000
+
+      .footer-title-active
+        color: #000
+
+      .footer-title-3
+        font-size: 12px
+        display: inline
+        color: #acacac
+        cursor: pointer
+
+        &:hover
+          font-family: Nunito
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 31px
+          color: #000
+
+      .footer-title-active
+        color: #000
+
+      li
+        margin-top: 0
+        font-size: 13px
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+
+    .footer-list-2
+      margin-top: 20px
+
+      li
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 13px
+        line-height: 31px
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-line
+    width: 184px
+    height: 1px
+    background: #000
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+  .footer-space
+    background: #f2f2f2
+    padding-top: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      position: inherit
+      display: block
+      margin: 0 auto
+      width: 70px
+      height: 31px
+
+    p
+      opacity: 1
+      display: block
+      text-align: center
+      margin: 0 auto
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 9px
+      line-height: 31px
+      color: #000
+
+  .ul-2, .ul-3
+    display: none
+
+@media (max-width: 768px)
+  header .header-text
+    padding-top: 67px
+
+    p
+      padding-left: 4%
+      padding-right: 4%
+
+    h1
+      font-size: 27px
+      line-height: 29px
+      padding-left: 4%
+      padding-right: 4%
+
+  .contacts
+    padding: 125px 0 60px 0px
+
+    h1
+      font-size: 24px
+
+    h3
+      font-size: 14px
+      text-align: left
+      padding-left: 20px
+      margin-top: 50px
+
+    span h3
+      margin-top: 0
+
+    .contacts-card
+      flex-direction: column
+
+      .contacts-card-text
+        padding: 40px 10px 40px 0px
+        width: 100%
+        font-family: Nunito
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 31px
+        color: #0d0d0d
+
+        .text
+          padding-left: 48px
+
+          img
+            left: 17px
+
+        span .text
+          text-align: center
+          padding-left: 0
+
+      .contacts-card-map
+        height: 280px
+        margin-top: 40px
+
+    h2
+      font-size: 18px
+      margin-top: 40px
+
+    .img-social
+      margin-top: 30px
+
+      a
+        margin-left: 20px
+
+        img
+          width: 36px
+          height: 36px
+
+  .modal-send
+    width: 90%
+    height: 90%
+
+  .product-mobile .product-mobile-item a h2
+    font-size: 21px
+    width: 100%
+
+@media (max-width: 450px)
+  header
+    min-height: 700px
+
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      padding-right: 30%
+
+@media (max-width: 374px)
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      border: 0
+
+    .footer-title-1, .footer-title-2, .footer-title-3, .footer-title-1:hover, .footer-title-2:hover, .footer-title-3:hover, li a
+      font-size: 9px
+      width: 100%
+
+header
+  display: flex
+  padding-top: 70px
+  min-height: 800px
+  background: url("../img/header-bg.png") center (center / cover) no-repeat
+  padding-left: 90px
+
+  .header-text
+    padding-top: 184px
+    display: flex
+    flex-direction: column
+
+    h1
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 45px
+      line-height: 64px
+      color: #000
+
+    p
+      font-family: Nunito
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      color: #000
+      margin-top: 30px
+
+    .send
+      margin-top: 142px
+      width: 206px
+      height: 50px
+      background: #fde000
+      box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+      border: 0
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 31px
+      letter-spacing: .205em
+      color: #212121
+      cursor: pointer
+
+    .look-work
+      width: 206px
+      height: 50px
+      font-size: 15px
+      line-height: 0
+      color: #000
+      padding-left: 21px
+      padding-top: 24px
+      border-left: .5px solid #000
+      position: relative
+
+      .arrow
+        position: absolute
+        left: -1px
+        bottom: -3px
+
+.header-text-right
+  padding-top: 184px
+  padding-left: 30%
+
+  h2
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 59px
+    line-height: 33px
+
+  h3
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 39px
+    line-height: 48px
+    color: #000
+
+  p
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 22px
+    color: #000
+
+.product
+  padding-top: 130px
+
+  h2
+    text-align: center
+
+  .product-img
+    margin-top: 130px
+    display: flex
+    flex-direction: row
+
+  .big-img
+    position: relative
+    z-index: 10
+
+    img
+      width: 100%
+      height: 100%
+
+    .product-img-bg
+      position: absolute
+      top: 0
+      left: -100%
+      text-align: left
+      background: rgba(255, 255, 255, 0.7)
+      -webkit-backdrop-filter: blur(4px)
+      backdrop-filter: blur(4px)
+      width: 100%
+      height: 100%
+      transition: all 0.3s ease
+
+    .product-img-text
+      position: absolute
+      top: 0
+      left: -100%
+      transition: all 0.3s ease
+
+      h2
+        margin-top: 70px
+        margin-left: 70px
+        text-align: left
+
+      p
+        text-align: left
+        font-family: Nunito
+        font-style: normal
+        font-weight: 200
+        font-size: 20px
+        line-height: 31px
+        color: #000
+        margin-left: 70px
+        margin-top: 40px
+
+    &:hover
+      .product-img-bg, .product-img-text
+        left: 0
+
+  .small-img-top
+    display: flex
+    flex-direction: row
+    height: 50%
+
+    .small-img-top-left
+      position: relative
+      z-index: 9
+
+      img
+        height: 100%
+        width: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        width: 0px
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+      h2
+        margin-top: 45%
+        margin-left: 20px
+        text-align: left
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+          width: 100%
+
+    .small-img-top-right
+      position: relative
+      z-index: 8
+
+      img
+        height: 100%
+        width: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+      h2
+        margin-top: 45%
+        margin-left: 20px
+        text-align: left
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+
+  .small-img-bot
+    display: flex
+    height: 50%
+
+    .small-img-bot-left
+      position: relative
+      z-index: 6
+
+      img
+        width: 100%
+        height: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+        h2
+          margin-top: 60%
+          margin-left: 10px
+          text-align: left
+          font-size: 25px
+
+        p
+          text-align: left
+          font-family: Nunito
+          font-style: normal
+          font-weight: 200
+          font-size: 14px
+          line-height: 31px
+          color: #000
+          margin-left: 10px
+          margin-top: 40px
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+
+    .small-img-bot-center
+      position: relative
+      z-index: 5
+
+      img
+        width: 100%
+        height: 100%
+
+      .product-img-bg
+        position: absolute
+        top: 0
+        left: -100%
+        text-align: left
+        background: rgba(255, 255, 255, 0.7)
+        -webkit-backdrop-filter: blur(4px)
+        backdrop-filter: blur(4px)
+        width: 100%
+        height: 100%
+        transition: all 0.3s ease
+
+      .product-img-text
+        position: absolute
+        top: 0
+        left: -100%
+        transition: all 0.3s ease
+
+        h2
+          margin-top: 76%
+          margin-left: 10px
+          text-align: left
+          font-size: 25px
+
+      &:hover
+        .product-img-bg, .product-img-text
+          left: 0
+
+    .small-img-bot-right
+      position: relative
+
+      img
+        width: 100%
+        height: 100%
+        opacity: 1
+        transition: 0.5s all ease
+
+      .bot-right-text
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 31px
+        color: #000
+
+        img
+          position: absolute
+          transform: translate(0%, 0%)
+
+      &:hover .bot-right-text img
+        transform: translate(-30%, 0%)
+
+.product-mobile
+  display: none
+
+  h2
+    margin-top: 55px
+    margin-bottom: 55px
+    text-align: center
+
+  .product-mobile-item
+    position: relative
+    height: 167px
+    width: 100%
+
+    a
+      text-decoration: none
+
+      img
+        opacity: .12
+        width: 100%
+        height: 167px
+
+        &:last-child
+          opacity: 1
+
+      h2
+        position: absolute
+        top: 0
+        margin: 0
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+
+      p
+        position: absolute
+        font-family: Nunito
+        font-style: normal
+        font-weight: 200
+        font-size: 14px
+        line-height: 31px
+        text-align: center
+        color: #000
+        left: 50%
+        top: 65%
+        transform: translate(-50%, -50%)
+
+      .arrow-left-m
+        width: 111px
+        position: absolute
+        left: 50%
+        top: 65%
+        transform: translate(-50%, -50%)
+
+.number
+  padding-top: 100px
+  margin-bottom: 130px
+
+  .number-card
+    text-align: center
+    border-right: 2px solid
+
+    h2
+      text-align: center
+      position: relative
+      z-index: 1
+      padding-top: 30px
+
+      .yellow
+        position: absolute
+        width: 71%
+        height: 16px
+        background: #fde000
+        bottom: 0
+        z-index: -1
+        margin-left: 15%
+
+    .number-text
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 20px
+      line-height: 31px
+      text-align: center
+      color: #000
+      margin-top: 40px
+      margin-bottom: 10px
+
+.number-card:last-child
+  border-right: 0
+
+/* //////////////////////////////////////////////////////////
+
+.demonstration-1-about
+  background: url("../img/demonstration-1-bg-about.png") center (center / cover) no-repeat
+  min-height: 875px
+  position: relative
+
+  .demonstration-1-bg-about
+    content: ""
+    transition: all ease 2s
+    position: absolute
+    top: 0
+    right: 0
+    height: 875px
+    width: 100vh
+    background: linear-gradient(270deg, #FFFFFF 1.05%, rgba(255, 255, 255, 0.91) 37.59%, rgba(255, 255, 255, 0.390625) 82.31%, rgba(255, 255, 255, 0) 98.5%)
+    z-index: 99
+
+  h2
+    position: absolute
+    z-index: 100
+    padding-top: 339px
+    right: 25px
+    padding-left: 15%
+    width: 60%
+
+  h3
+    position: absolute
+    margin-top: 100px
+    float: right
+    width: 60%
+    z-index: 100
+    padding-top: 408px
+    right: 25px
+    padding-left: 15%
+
+  &:hover .demonstration-1-bg-about
+    width: 200vh
+
+.demonstration-1-mobile-about
+  background: url("../img/demonstration-1-bg-mob-about.png") center (center / cover) no-repeat
+  padding: 40px 20px 40px 20px
+  display: none
+
+  h3
+    margin-top: 25px
+
+.demonstration-2-mobile-about
+  background: url("../img/demonstration-2-bg-mob-about.png") center (center / cover) no-repeat
+  padding: 40px 20px 40px 20px
+  display: none
+
+  h3
+    margin-top: 25px
+
+.demonstration-3-mobile-about
+  background: url("../img/demonstration-3-bg-mob-about.png") center (center / cover) no-repeat
+  padding: 40px 20px 40px 20px
+  display: none
+
+  h3
+    margin-top: 25px
+
+.demonstration-2-about
+  background: url("../img/demonstration-2-bg-about.png") center (center / cover) no-repeat
+  min-height: 875px
+  position: relative
+
+  .demonstration-2-bg-about
+    content: ""
+    transition: all ease 2s
+    position: absolute
+    left: 0px
+    height: 875px
+    padding-top: 339px
+    width: 50%
+    background: linear-gradient(-270deg, #FFFFFF 1.05%, rgba(255, 255, 255, 0.91) 37.59%, rgba(255, 255, 255, 0.390625) 82.31%, rgba(255, 255, 255, 0) 98.5%)
+    text-align: right
+    padding-right: 100px
+    padding-left: 0
+
+  h2
+    position: absolute
+    z-index: 100
+    padding-top: 339px
+    left: 25px
+    padding-right: 15%
+    width: 60%
+
+  h3
+    position: absolute
+    margin-top: 100px
+    float: left
+    width: 60%
+    z-index: 100
+    padding-top: 408px
+    left: 25px
+    padding-right: 15%
+
+  &:hover .demonstration-2-bg-about
+    width: 100%
+
+.demonstration-3-about
+  background: url("../img/demonstration-2-bg-about.png") center (center / cover) no-repeat
+  min-height: 875px
+  position: relative
+
+  .demonstration-3-text-about
+    content: ""
+    transition: all ease 2s
+    position: absolute
+    top: 0
+    right: 0
+    height: 875px
+    width: 100vh
+    background: linear-gradient(270deg, #FFFFFF 1.05%, rgba(255, 255, 255, 0.91) 37.59%, rgba(255, 255, 255, 0.390625) 82.31%, rgba(255, 255, 255, 0) 98.5%)
+    z-index: 99
+
+  h2
+    position: absolute
+    z-index: 100
+    padding-top: 339px
+    right: 25px
+    width: 60%
+    padding-left: 15%
+    line-height: 54px
+
+  h3
+    position: absolute
+    margin-top: 100px
+    width: 60%
+    z-index: 100
+    padding-top: 475px
+    right: 25px
+    padding-left: 15%
+
+  &:hover .demonstration-3-text-about
+    width: 200vh
+
+.order
+  min-height: 693px
+
+  .order-forms
+    display: flex
+    flex-direction: column
+
+    h2
+      font-size: 19px
+      line-height: 31px
+      text-align: center
+      color: #0d0d0d
+      margin-top: 130px
+      text-align: center
+
+    .phone-form
+      margin: 0 auto
+      margin-top: 33px
+      width: 293px
+      height: 39px
+      background: rgba(198, 198, 198, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 200
+      font-size: 15px
+      line-height: 31px
+      text-align: center
+      color: #afafaf
+      border: 0
+
+    .name-form
+      margin: 0 auto
+      margin-top: 30px
+      width: 293px
+      height: 39px
+      background: rgba(198, 198, 198, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 200
+      font-size: 15px
+      line-height: 31px
+      text-align: center
+      color: #afafaf
+      border: 0
+
+    .load
+      margin: 0 auto
+      width: 155.93px
+      height: 37px
+      background: rgba(0, 0, 0, 0)
+      margin-top: 40px
+      cursor: pointer
+
+    .send-order
+      margin: 0 auto
+      margin-top: 20px
+      width: 177px
+      height: 42px
+      background: #fde000
+      box-shadow: 0px 8px 13px rgba(253, 224, 0, 0.28)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 17px
+      color: #000
+      border: 0
+      cursor: pointer
+
+    p
+      margin-top: 30px
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 200
+      font-size: 10px
+      line-height: 15px
+      text-align: center
+      color: #000
+
+  .order-titles
+    margin-top: 282px
+
+    h3
+      margin-top: 40px
+
+.fixed-button
+  transition: 0.3s all 
+  position: fixed
+  width: 203px
+  height: 83px
+  top: 50%
+  right: 0
+  transform: translate(0, -50%)
+  background: #fde000
+  box-shadow: 0px 16px 24px rgba(253, 224, 0, 0.18)
+  z-index: 9999
+  cursor: pointer
+  padding-left: 37px
+  padding-top: 15px
+
+
+.fixed-button-active
+  right: -203px
+
+
+.fixed-button-modal
+  transition: 0.3s all 
+  width: 406px
+  height: 281px
+  background: #FDE000
+  box-shadow: 0px 37px 37px rgba(253, 224, 0, 0.18)
+  position: fixed
+  top: 50%
+  right: -406px
+  transform: translate(0, -50%)
+  z-index: 9999
+  padding-top: 63px
+  padding-left: 50px
+
+  .fixed-button-modal-close
+    height: 23px
+    position: absolute
+    top: 15px
+    left: 15px
+    cursor: pointer
+  .fixed-button-modal-number
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 31px
+    color: #0D0D0D
+    a
+      text-decoration: none
+      color: #0D0D0D
+    img
+      height: 22px
+      width: 22px
+  .fixed-button-modal-email
+    margin-top: 15px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 31px
+    color: #0D0D0D
+    a
+      text-decoration: none
+      color: #0D0D0D
+    img
+      height: 22px
+      width: 22px
+  a
+    text-decoration: none
+    .fixed-button-modal-button
+      width: 206px
+      height: 50px
+      background: #FFFFFF
+      box-shadow: 0px 7px 14px rgba(255, 255, 255, 0.08)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      line-height: 31px
+      letter-spacing: 0.205em
+      text-transform: uppercase
+      color: #212121
+      margin-left: 34px
+      margin-top: 66px
+      text-align: center
+      padding-top: 9px
+      cursor: pointer
+      img
+        position: relative
+        top: 3px
+        left: 7px
+
+.fixed-button-modal-active
+  right: 0
+
+.modal-send
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  margin: 0 auto
+  padding: 20px 20px
+  padding-top: 70px
+  position: fixed
+  background: #fff
+  height: 90%
+  width: 40%
+  display: flex
+  flex-direction: column
+  z-index: 10001
+  display: none
+
+  h2
+    text-align: center
+    margin-bottom: 10px
+
+  input
+    width: 85%
+    height: 55px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+
+  textarea
+    width: 85%
+    height: 85px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+    padding-top: 10px
+    padding-right: 30px
+    resize: none
+
+  p
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000
+    margin-top: 40px
+
+    a
+      color: #3b3b3b
+
+  button
+    height: 67px
+    width: 70%
+    background: #fde000
+    border: 0
+    margin: 0 auto
+    margin-top: 30px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    cursor: pointer
+
+.close
+  position: absolute
+  height: 20px
+  width: 20px
+  top: 30px
+  right: 30px
+  cursor: pointer
+
+.modal-bg
+  display: none
+  position: fixed
+  width: 200vh
+  height: 200vh
+  z-index: 10000
+  background: #000
+  opacity: 0.8
+
+.mobile
+  display: none
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: #fff
+
+  .menu-mobile
+    height: 73px
+    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+    position: relative
+
+    .logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+
+    .loop-mobile
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      left: 20px
+
+    .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 22px
+      width: 34px
+      height: 18px
+
+      span
+        display: block
+        height: 5px
+        width: 100%
+        background-color: #000
+        margin-top: 4px
+        transition: 0.5s all
+
+    .hamburger-active
+      top: 41px
+
+      span
+        margin-top: -5px
+
+        &:nth-child(1)
+          transform: rotate(-45deg)
+
+        &:nth-child(2)
+          display: none
+
+        &:nth-child(3)
+          transform: rotate(45deg)
+
+  .menu-mobile-items
+    padding-bottom: 100%
+    height: 100vh
+    padding-top: 54px
+    display: none
+    transition: .5s all
+    position: relative
+
+    .call-order
+      width: 181px
+      height: 38px
+      background: #fde000
+      border: 0
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      cursor: pointer
+      display: block
+      margin: 0 auto
+      margin-top: 40px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+    ul li
+      list-style: none
+      margin-top: 15px
+      text-align: center
+
+      a
+        text-decoration: none
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #0b0b0b
+
+        &:hover
+          font-weight: 600
+          font-size: 24px
+          line-height: 29px
+          color: #0b0b0b
+
+.send-mobile
+  display: none
+  margin: 0 auto
+  margin-top: 25px
+  margin-bottom: 40px
+  width: 206px
+  height: 50px
+  background: #fde000
+  box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+  border: 0
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 31px
+  letter-spacing: .205em
+  text-transform: uppercase
+  color: #212121
+
+.loop-modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  padding: 200px 20px
+
+  .loop-modal-content
+    position: relative
+
+    input
+      background: #f2f2f2
+      display: block
+      margin: 0 auto
+      position: relative
+      width: 80%
+      height: 44px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      text-align: center
+      color: #000
+      border: 0
+
+    img
+      position: absolute
+      top: 14px
+      left: 13%
+
+    button
+      display: block
+      margin: 0 auto
+      width: 181px
+      height: 38px
+      border: 0
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      margin-top: 25px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+@media (max-width: 1663px)
+  .menu .menu-items ul
+    margin-left: 138px
+    min-width: 650px
+
+@media (max-width: 1590px)
+  .header-text-right
+    padding-left: 15%
+
+  h2
+    font-size: 35px
+
+  .product .small-img-bot .small-img-bot-right .bot-right-text
+    left: 45%
+
+@media (max-width: 1282px)
+  .header-text-right
+    padding-left: 0
+
+    h2
+      font-size: 30px
+
+    h3
+      font-size: 25px
+
+  .fixed-button
+    width: 158px
+    height: 83px
+
+  header .header-text
+    h1
+      font-size: 27px
+      line-height: 44px
+
+    p
+      width: 60%
+
+  .menu
+    padding-left: 0
+
+    .menu-items ul
+      margin-left: 126px
+      min-width: 596px
+
+  .product
+    .big-img .product-img-text
+      h2
+        margin-left: 30px
+
+      p
+        font-size: 15px
+        margin-left: 30px
+
+    .small-img-bot .small-img-bot-left .product-img-text h2
+      font-size: 20px
+
+@media (max-width: 1220px)
+  .product .small-img-bot
+    .small-img-bot-center .product-img-text, .small-img-bot-left .product-img-text
+      left: -120%
+
+    .small-img-bot-center .product-img-text h2, .small-img-bot-left .product-img-text h2
+      margin-top: 60%
+
+    .small-img-bot-center .product-img-text p, .small-img-bot-left .product-img-text p
+      margin-top: 0
+
+  h2
+    font-size: 25px
+
+  .footer-space img
+    bottom: 0
+    right: 0
+
+@media (max-width: 1062px)
+  .menu .call-order
+    font-size: 10px
+    width: 40%
+
+  .demonstration-3-about h2
+    line-height: 35px
+
+@media (max-width: 992px)
+  .header-text-right
+    display: none
+
+  header
+    min-height: 500px
+    padding-left: 0
+    flex-direction: column
+
+  .mobile
+    display: block
+
+  .menu, .fixed-button, .swiper-arrow, .swiper-pc
+    display: none
+
+  .swiper-mobile
+    display: block
+    width: 100%
+    padding: 0 25px
+    height: 372px
+
+  h1
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    color: #000
+    padding-left: 10%
+    padding-right: 10%
+
+  header .header-text
+    padding-top: 140px
+
+    .look-work
+      display: none
+
+    p
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 25px
+
+    .send
+      margin: 0 auto
+      display: none
+      margin-top: 25px
+
+  .product
+    display: none
+
+    .product-img
+      margin-top: 55px
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 24px
+      line-height: 29px
+      text-align: center
+      color: #000
+
+  .send-mobile, .product-mobile
+    display: block
+
+  .number .number-card
+    border: 0
+
+    .number-text
+      font-size: 14px
+      line-height: 17px
+      padding-left: 20%
+      padding-right: 20%
+
+    h2
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 36px
+      line-height: 31px
+      color: #000
+
+      .yellow
+        width: 40%
+        margin-left: 30%
+
+  .order .order-titles
+    display: none
+
+  .demonstration-2-about h3
+    margin-top: 25px
+
+  header .header-text
+    padding-top: 115px
+
+    p
+      padding-left: 4%
+      padding-right: 4%
+
+    h1
+      font-size: 27px
+      line-height: 29px
+      padding-left: 4%
+      padding-right: 4%
+
+  .demonstration-1-about, .demonstration-2-about, .demonstration-3-about
+    display: none
+
+  .demonstration-1-mobile-about, .demonstration-2-mobile-about, .demonstration-3-mobile-about
+    display: block
+
+  .number
+    padding-top: 50px
+    margin-bottom: 50px
+
+  footer
+    min-height: 570px
+    padding-top: 20px
+
+    .footer-social
+      margin-top: 20px
+
+    .footer-descr
+      margin-top: 20px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 7px
+      line-height: 11px
+      text-align: center
+      color: #000
+
+      .footer-year
+        margin-top: 10px
+
+    .footer-list-1
+      .footer-title-1, .footer-title-2
+        font-size: 12px
+        display: inline
+        border-right: 1px solid
+        border-color: #acacac
+        color: #acacac
+        cursor: pointer
+        padding-right: 30%
+
+      .footer-title-1:hover, .footer-title-2:hover
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 31px
+        color: #000
+
+      .footer-title-active
+        color: #000
+
+      .footer-title-3
+        font-size: 12px
+        display: inline
+        color: #acacac
+        cursor: pointer
+
+        &:hover
+          font-family: Nunito
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 31px
+          color: #000
+
+      .footer-title-active
+        color: #000
+
+      li
+        margin-top: 0
+        font-size: 13px
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+
+    .footer-list-2
+      margin-top: 20px
+
+      li
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 13px
+        line-height: 31px
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-line
+    width: 184px
+    height: 1px
+    background: #000
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+  .footer-space
+    background: #f2f2f2
+    padding-top: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      position: inherit
+      display: block
+      margin: 0 auto
+      width: 70px
+      height: 31px
+
+    p
+      opacity: 1
+      display: block
+      text-align: center
+      margin: 0 auto
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 9px
+      line-height: 31px
+      color: #000
+
+  .ul-2, .ul-3
+    display: none
+
+  .modal-send
+    width: 90%
+    height: 90%
+
+  .product-mobile .product-mobile-item a h2
+    font-size: 21px
+    width: 100%
+
+@media (max-width: 992px) and (max-width: 450px)
+  .product-mobile .product-mobile-item a p
+    width: 100%
+
+  header
+    min-height: 500px
+
+@media (max-width: 992px) and (max-width: 374px)
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      border: 0
+
+    .footer-title-1, .footer-title-2, .footer-title-3, .footer-title-1:hover, .footer-title-2:hover, .footer-title-3:hover, li a
+      font-size: 9px
+      width: 100%
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+body
+  overflow-x: hidden
+
+h2
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 47px
+  line-height: 31px
+  color: #000
+
+h3
+  font-family: Nunito
+  font-style: normal
+  font-weight: 200
+  font-size: 20px
+  line-height: 31px
+  color: #000
+
+.menu
+  box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+  min-height: 86px
+  padding-left: 90px
+  position: fixed
+  z-index: 9900
+  background: #fff
+  width: 100%
+
+  .menu-items
+    display: flex
+
+    .logo
+      position: absolute
+
+    ul
+      display: flex
+      justify-content: space-between
+      padding-left: 0
+      margin-left: 200px
+      min-width: 800px
+      margin-top: 29px
+
+      li
+        list-style: none
+
+        a
+          text-decoration: none
+          font-family: Montserrat
+          font-weight: 400
+          font-size: 14px
+          color: #0b0b0b
+
+        &:hover
+          border-bottom: 3px solid
+
+          a
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            color: #0b0b0b
+
+  input
+    width: 20%
+    height: 36px
+    left: 1140px
+    margin-top: 26px
+    background: #f2f2f2
+    border: 0
+    padding-left: 37px
+    margin-left: 28px
+    background: url("../icons/loop.svg") no-repeat 11px 9px
+    background-color: #f2f2f2
+
+  .call-order
+    margin-left: 15px
+    margin-right: 60px
+    margin-top: 24px
+    width: 10%
+    height: 38px
+    background: #fde000
+    border: 0
+    box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+    font-family: Montserrat
+    font-weight: 600
+    font-size: 13px
+    line-height: 16px
+    color: #000
+    cursor: pointer
+
+  .cart
+    position: absolute
+    right: 5px
+    top: 27px
+    width: 37px
+    height: 31px
+    margin-left: 52px
+
+.header-diller
+  display: flex
+  padding-top: 70px
+  min-height: 674px
+  background: url("../img/header-diller-bg.png") center (center / cover) no-repeat
+
+header .header-text
+  padding-top: 184px
+  display: flex
+  flex-direction: column
+
+  h1
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 45px
+    line-height: 64px
+    color: #000
+
+  p
+    font-family: Nunito
+    font-weight: 200
+    font-size: 21px
+    line-height: 31px
+    color: #000
+    margin-top: 30px
+
+  .send
+    margin-top: 142px
+    width: 206px
+    height: 50px
+    background: #fde000
+    box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+    border: 0
+    font-family: Montserrat
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 31px
+    letter-spacing: .205em
+    text-transform: uppercase
+    color: #212121
+    cursor: pointer
+
+  .look-work
+    width: 206px
+    height: 50px
+    font-size: 15px
+    line-height: 0
+    color: #000
+    padding-left: 21px
+    padding-top: 24px
+    border-left: .5px solid #000
+    position: relative
+
+    .arrow
+      position: absolute
+      left: -1px
+      bottom: -3px
+
+.documentation
+  min-height: 1545px
+  padding: 202px 360px
+
+  h1
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 47px
+    line-height: 64px
+    color: #000
+    text-align: center
+
+  h3
+    margin-top: 20px
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 19px
+    line-height: 31px
+    text-align: center
+    color: #0d0d0d
+
+  .documentation-items
+    width: 100%
+    margin-top: 45px
+
+    a
+      text-decoration: none
+      color: #000
+
+      .documentation-item
+        display: flex
+        position: relative
+        margin-top: 30px
+
+        .documentation-item-text
+          font-family: Nunito
+          font-size: 19px
+          font-style: normal
+          font-weight: 600
+          line-height: 31px
+          letter-spacing: 0em
+          text-align: left
+          padding-right: 70px
+
+        span
+          font-family: Montserrat
+          font-size: 14px
+          font-style: normal
+          font-weight: 400
+          line-height: 0
+          letter-spacing: 0em
+          text-align: left
+
+        .documentation-item-img
+          position: absolute
+          right: 0
+          top: 50%
+          transform: translate(0, -50%)
+
+        &:hover
+          background: #f2f2f2
+
+footer
+  min-height: 648px
+  background: #f2f2f2
+
+  .footer-list-1
+    .footer-title-1, .footer-title-2, .footer-title-3
+      margin-top: 30px
+      font-family: Nunito
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 31px
+      color: #000
+      margin-bottom: 10px
+
+    li
+      list-style: none
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 31px
+      margin-top: 5px
+
+      a
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-2
+    margin-top: 77px
+
+    li
+      list-style: none
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 31px
+      margin-top: 5px
+
+      a
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-social
+    margin-top: 40px
+
+    .footer-social-icons
+      text-align: center
+
+      a
+        margin-left: 13.82px
+        text-decoration: none
+
+  .footer-descr
+    text-align: center
+    font-family: Nunito
+    font-style: normal
+    font-weight: 300
+    font-size: 13px
+    line-height: 18px
+    color: #000
+    margin-top: 32px
+
+    .footer-year
+      margin-top: 20px
+
+.footer-space
+  position: relative
+  background: #f2f2f2
+
+  img
+    position: absolute
+    bottom: 51px
+    right: 30px
+
+  p
+    opacity: 0
+
+.footer-titles
+  display: flex
+  justify-content: space-between
+
+  .footer-questions, .footer-documentation, .footer-additionally
+    width: calc(100% / 3)
+    padding-left: 30px
+
+.footer-subtitles
+  display: flex
+  justify-content: space-between
+
+  ul
+    width: calc(100% / 3)
+    padding-left: 30px
+
+
+
+.modal-send
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  margin: 0 auto
+  padding: 20px 20px
+  padding-top: 70px
+  position: fixed
+  background: #fff
+  height: 90%
+  width: 40%
+  display: flex
+  flex-direction: column
+  z-index: 10001
+  display: none
+
+  h2
+    text-align: center
+    margin-bottom: 10px
+
+  input
+    width: 85%
+    height: 55px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+
+  textarea
+    width: 85%
+    height: 85px
+    margin: 0 auto
+    margin-top: 30px
+    background: rgba(198, 198, 198, 0.19)
+    border: 0
+    padding-left: 30px
+    padding-top: 10px
+    padding-right: 30px
+    resize: none
+
+  p
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000
+    margin-top: 40px
+
+    a
+      color: #3b3b3b
+
+  button
+    height: 67px
+    width: 70%
+    background: #fde000
+    border: 0
+    margin: 0 auto
+    margin-top: 30px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000
+    cursor: pointer
+
+.close
+  position: absolute
+  height: 20px
+  width: 20px
+  top: 30px
+  right: 30px
+  cursor: pointer
+
+.modal-bg
+  display: none
+  position: fixed
+  width: 200vh
+  height: 200vh
+  z-index: 10000
+  background: #000
+  opacity: 0.8
+
+.mobile
+  display: none
+  width: 100%
+  position: fixed
+  z-index: 9999
+  background: #fff
+
+  .menu-mobile
+    height: 73px
+    box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.03)
+    position: relative
+
+    .logo
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      z-index: 9999
+
+    .loop-mobile
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      left: 20px
+
+    .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 22px
+      width: 34px
+      height: 18px
+
+      span
+        display: block
+        height: 5px
+        width: 100%
+        background-color: #000
+        margin-top: 4px
+        transition: 0.5s all
+
+    .hamburger-active
+      top: 41px
+
+      span
+        margin-top: -5px
+
+        &:nth-child(1)
+          transform: rotate(-45deg)
+
+        &:nth-child(2)
+          display: none
+
+        &:nth-child(3)
+          transform: rotate(45deg)
+
+  .menu-mobile-items
+    padding-bottom: 100%
+    height: 100vh
+    padding-top: 54px
+    display: none
+    transition: .5s all
+    position: relative
+
+    .call-order
+      width: 181px
+      height: 38px
+      background: #fde000
+      border: 0
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-weight: 600
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      cursor: pointer
+      display: block
+      margin: 0 auto
+      margin-top: 40px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+    ul li
+      list-style: none
+      margin-top: 15px
+      text-align: center
+
+      a
+        text-decoration: none
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #0b0b0b
+
+        &:hover
+          font-weight: 600
+          font-size: 24px
+          line-height: 29px
+          color: #0b0b0b
+
+.send-mobile
+  display: none
+  margin: 0 auto
+  margin-top: 25px
+  margin-bottom: 40px
+  width: 206px
+  height: 50px
+  background: #fde000
+  box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+  border: 0
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 600
+  font-size: 12px
+  line-height: 31px
+  letter-spacing: .205em
+  text-transform: uppercase
+  color: #212121
+
+.loop-modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background: #fff
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+  padding: 200px 20px
+
+  .loop-modal-content
+    position: relative
+
+    input
+      background: #f2f2f2
+      display: block
+      margin: 0 auto
+      position: relative
+      width: 80%
+      height: 44px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 200
+      font-size: 21px
+      line-height: 31px
+      text-align: center
+      color: #000
+      border: 0
+
+    img
+      position: absolute
+      top: 14px
+      left: 13%
+
+    button
+      display: block
+      margin: 0 auto
+      width: 181px
+      height: 38px
+      border: 0
+      background: #fde000
+      box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 500
+      font-size: 13px
+      line-height: 16px
+      color: #000
+      margin-top: 25px
+
+    .back
+      font-family: Montserrat
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 29px
+      color: #0b0b0b
+      text-align: center
+      margin-top: 29px
+
+@media (max-width: 1663px)
+  .menu .menu-items ul
+    margin-left: 138px
+    min-width: 650px
+
+@media (max-width: 1590px)
+  h2
+    font-size: 35px
+
+@media (max-width: 1282px)
+  .fixed-button
+    width: 158px
+    height: 83px
+
+  header .header-text h1
+    font-size: 27px
+    line-height: 44px
+
+  .menu
+    padding-left: 0
+
+    .menu-items ul
+      margin-left: 126px
+      min-width: 596px
+
+.documentation
+  padding: 170px 200px
+
+  h2
+    font-size: 25px
+
+  .footer-space img
+    bottom: 0
+    right: 0
+
+@media (max-width: 1062px)
+  .menu .call-order
+    font-size: 10px
+    width: 40%
+
+@media (max-width: 992px)
+  .documentation
+    padding: 170px 150px
+
+  .ul-2, .ul-3
+    display: none
+
+  header
+    padding-left: 0
+    flex-direction: column
+
+  .mobile
+    display: block
+
+  .menu, .fixed-button
+    display: none
+
+  h1
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+    color: #000
+    padding-left: 10%
+    padding-right: 10%
+
+  header .header-text
+    padding-top: 140px
+
+    .look-work
+      display: none
+
+    p
+      text-align: center
+      display: block
+      margin: 0 auto
+      margin-top: 25px
+
+    .send
+      margin: 0 auto
+      display: none
+      margin-top: 25px
+
+  .send-mobile, .product-mobile
+    display: block
+
+  footer
+    min-height: 570px
+    padding-top: 20px
+
+    .footer-social
+      margin-top: 20px
+
+    .footer-descr
+      margin-top: 20px
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 7px
+      line-height: 11px
+      text-align: center
+      color: #000
+
+      .footer-year
+        margin-top: 10px
+
+    .footer-list-1
+      .footer-title-1, .footer-title-2
+        font-size: 12px
+        display: inline
+        border-right: 1px solid
+        border-color: #acacac
+        color: #acacac
+        cursor: pointer
+        padding-right: 40%
+
+      .footer-title-1:hover, .footer-title-2:hover
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 31px
+        color: #000
+
+      .footer-title-active
+        color: #000
+
+      .footer-title-3
+        font-size: 12px
+        display: inline
+        color: #acacac
+        cursor: pointer
+
+        &:hover
+          font-family: Nunito
+          font-style: normal
+          font-weight: 600
+          font-size: 12px
+          line-height: 31px
+          color: #000
+
+      .footer-title-active
+        color: #000
+
+      li
+        margin-top: 0
+        font-size: 13px
+        font-family: Nunito
+        font-style: normal
+        font-weight: bold
+        line-height: 31px
+
+    .footer-list-2
+      margin-top: 20px
+
+      li
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 13px
+        line-height: 31px
+        -webkit-text-decoration-line: underline
+        text-decoration-line: underline
+        color: #000
+
+  .footer-list-line
+    width: 184px
+    height: 1px
+    background: #000
+    display: block
+    margin: 0 auto
+    margin-top: 30px
+
+  .footer-space
+    background: #f2f2f2
+    padding-top: 10px
+    display: flex
+    flex-direction: column
+
+    img
+      position: inherit
+      display: block
+      margin: 0 auto
+      width: 70px
+      height: 31px
+      top: 0
+      right: 0
+
+    p
+      opacity: 1
+      display: block
+      text-align: center
+      margin: 0 auto
+      font-family: Nunito
+      font-style: normal
+      font-weight: 300
+      font-size: 9px
+      line-height: 31px
+      color: #000
+
+  .ul-2, .ul-3
+    display: none
+
+@media (max-width: 768px)
+  .documentation
+    padding: 170px 50px
+
+    h1
+      font-family: Montserrat
+      font-size: 24px
+      font-style: normal
+      font-weight: 600
+      line-height: 65px
+      letter-spacing: 0em
+
+    h3
+      font-size: 18px
+      line-height: 31px
+
+    .documentation-items a .documentation-item .documentation-item-text
+      font-size: 14px
+      line-height: 31px
+
+  header .header-text
+    padding-top: 67px
+
+    p
+      padding-left: 4%
+      padding-right: 4%
+
+    h1
+      font-size: 27px
+      line-height: 29px
+      padding-left: 4%
+      padding-right: 4%
+
+  .modal-send
+    width: 90%
+    height: 90%
+
+  .product-mobile .product-mobile-item a h2
+    font-size: 21px
+    width: 100%
+
+@media (max-width: 450px)
+  .documentation
+    padding: 170px 23px
+
+  header
+    min-height: 700px
+
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      padding-right: 30%
+
+@media (max-width: 374px)
+  footer .footer-list-1
+    .footer-title-1, .footer-title-2
+      border: 0
+
+    .footer-title-1, .footer-title-2, .footer-title-3, .footer-title-1:hover, .footer-title-2:hover, .footer-title-3:hover, li a
+      font-size: 9px
+      width: 100%
+    
+.about-info
+    height: 1099px
+    padding-top: 202px
+
+    h1
+        text-align: center
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 47px
+        line-height: 64px
+        color: #000000
+        z-index: 1
+        background: white
+        margin-bottom: 100px
+    .about-info-item
+        width: 810px
+        height: 57px
+        margin: 0 auto
+        position: relative
+        transition: 0.2s all
+        margin-top: 20px
+        .about-info-title
+            width: 100%
+            background: #F2F2F2
+            padding: 13px 0px 13px 60px
+            font-family: Nunito
+            font-style: normal
+            font-weight: 600
+            font-size: 19px
+            line-height: 31px
+            color: #0D0D0D
+            position: relative
+            img
+                position: absolute
+                right: 11px
+                top: 0
+                margin-top: 20px
+                transform: rotate(0deg)
+                transition: 0.2s all
+        .about-info-subtitle
+            font-family: Nunito
+            font-style: normal
+            font-weight: normal
+            font-size: 19px
+            line-height: 0
+            color: #0D0D0D
+            position: absolute
+            z-index: -1
+            top: 10px
+            transition: 0.2s all
+    .about-info-item-active
+        height: 200px
+        .about-info-title
+            img
+                transform: rotate(45deg)
+        .about-info-subtitle
+            line-height: 31px
+            top: 67px
+@media ( max-width: 992px )
+  .about-info
+        height: 950px
+        h1
+            font-size: 24px
+            line-height: 30px
+        .about-info-item
+            width: 508px
+@media ( max-width: 520px  )
+    .about-info
+        h1
+            font-size: 24px
+            line-height: 30px
+        .about-info-item
+            width: 279px
+    .about-info .about-info-item .about-info-title
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 31px
+        color: #0D0D0D
+        padding-left: 6px
+    .about-info .about-info-item-active .about-info-subtitle
+        font-family: Nunito
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #0D0D0D
+  
+
+.reviews, .order-proc
+    min-height: 665px
+    padding-bottom: 70px
+    padding-top: 202px
+    padding-left: 90px
+    h1
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 47px
+        line-height: 64px
+        color: #000000
+        text-align: center
+    .review-item
+        width: 1140px
+        margin-top: 70px
+        height: 328px
+        background:#F2F2F2
+        position: relative
+        .review-img
+            position: absolute
+            left: 20px
+            top: 42px
+        .review-title
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 600
+            font-size: 24px
+            line-height: 31px
+            color: #000000
+            padding: 50px 53px 0px 113px
+        .review-date
+            font-family: Montserrat
+            font-weight: normal
+            font-size: 14px
+            line-height: 25px
+            color: #BCBCBC
+            padding: 0px 53px 0px 113px
+        .review-text
+            margin-top: 19px
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 25px
+            color: #000000
+            padding: 0px 53px 50px 113px
+@media ( max-width: 1310px  )
+    .reviews, .order-proc
+        padding-right: 90px
+        padding-top: 155px
+        h1
+        .review-item
+            width: 100%
+@media  ( max-width: 1090px )
+    .reviews, .order-proc
+        padding-right: 0
+        padding-left: 0
+
+        h1
+        .review-item
+            width: 100%
+            height: 100%
+
+@media ( max-width: 768px  )
+    .reviews, .order-proc
+      .review-item 
+        .review-text
+          padding: 0px 20px 50px 20px
+
+.order-proc
+  h3
+    font-family: Nunito
+    font-style: normal
+    font-weight: 200
+    font-size: 20px
+    line-height: 31px
+    text-align: center
+    color: #000000
+    margin-top: 40px
+  .home-page
+    width: 210px
+    height: 47px
+    background: #FDE000
+    display: block
+    margin: 0 auto
+    box-shadow: 0px 9px 11px rgba(253, 224, 0, 0.19)
+    margin-top: 20px
+    border: 0
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+  h2
+    margin-top: 70px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 47px
+    line-height: 64px
+    color: #000000
+    text-align: center
+@media ( max-width: 413px )
+  .order-proc h2
+    display: none
+  .order-proc .review-item
+    display: none
+
+
+
+
+
+.ordering
+    min-height: 1099px
+    padding-top: 202px
+    padding-bottom: 130px
+    h1
+        text-align: center
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 47px
+        line-height: 64px
+        color: #000000
+        z-index: 1
+        background: white
+        margin-bottom: 0
+    h3
+        margin-top: 20px
+        font-family: Nunito
+        font-style: normal
+        font-weight: normal
+        font-size: 19px
+        line-height: 31px
+        color: #0D0D0D
+        text-align: center
+    .ordering-item, .ordering-item-input
+        width: 810px
+        height: 57px
+        margin: 0 auto
+        position: relative
+        transition: 0.2s all
+        margin-top: 20px
+        .ordering-title, .ordering-input
+            width: 100%
+            background: #F2F2F2
+            padding: 13px 0px 13px 7px
+            font-family: Nunito
+            font-style: normal
+            font-weight: 200
+            font-size: 15px
+            line-height: 31px
+            color: #0D0D0D
+            position: relative
+            img
+                margin-left: 33px
+                margin-top: 0
+                transition: 0.2s all
+        .ordering-subtitle
+            font-family: Nunito
+            font-style: normal
+            font-weight: normal
+            font-size: 19px
+            line-height: 0
+            color: #0D0D0D
+            position: absolute
+            z-index: -1
+            top: 10px
+            transition: 0.2s all
+    .ordering-item-active
+        height: 200px
+        .ordering-title
+          img
+            display: none
+        .ordering-subtitle
+            line-height: 31px
+            top: 67px
+@media ( max-width: 992px )
+  .ordering
+        min-height: 950px
+        h1
+            font-size: 24px
+            line-height: 30px
+        .ordering-item, .ordering-item-input
+            width: 508px
+@media ( max-width: 520px  )
+    .ordering
+
+        h1
+            font-size: 24px
+            line-height: 30px
+        .ordering-item ,.ordering-item-input
+            width: 279px
+    .ordering .ordering-item .ordering-title, .ordering-input
+        font-family: Nunito
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 31px
+        color: #0D0D0D
+        padding-left: 6px
+    .ordering .ordering-item-active .ordering-subtitle
+        font-family: Nunito
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: #0D0D0D
+    .ordering-item, .ordering-item-input
+        width: 810px
+        height: 57px
+        margin: 0 auto
+        position: relative
+        transition: 0.2s all
+        margin-top: 20px
+        .ordering-title, .ordering-input
+            width: 100%
+            background: #F2F2F2
+            padding: 13px 0px 13px 60px
+            font-family: Nunito
+            font-style: normal
+            font-weight: 200
+            font-size: 15px
+            line-height: 31px
+            color: #0D0D0D
+            position: relative
+.ordering-item-input
+    img
+        position: absolute
+        left: 180px
+        top: 21px
+    .ordering-input
+        border: 0
+.ordering-next
+    width: 177px
+    height: 42px
+    background: #FDE000
+    box-shadow: 0px 8px 13px rgba(253, 224, 0, 0.28)
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    border: 0
+    margin: 0 auto
+    display: block
+    margin-top: 30px
+.ordering-two
+    margin-top: 70px
+    .send-two
+        display: block
+        margin: 0 auto
+        margin-top: 70px
+        width: 206px
+        height: 50px
+        background: #fde000
+        box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+        border: 0
+        font-family: Montserrat
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 31px
+        letter-spacing: .205em
+        text-transform: uppercase
+        color: #212121
+        cursor: pointer
+.ordering
+    .ordering-product-img
+        margin: 0 auto
+        display: block
+        margin-top: 70px
+        
+@media ( max-width: 750px  )
+    .ordering
+        .ordering-product-img
+            margin: 0 auto
+            display: block
+            width: 208px
+            height: 140px
+            margin-top: 15px
+    
+.ordering
+    h4
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 47px
+        line-height: 52px
+        color: #000000
+        text-align: center
+        margin-top: 81px
+.ordering-forgot
+    display: flex
+    padding-left: 55px
+    padding-right: 55px
+    .ordering-forgot-item
+        width: calc( 100% / 3 )
+        margin-top: 50px
+
+        .ordering-forgot-item-img
+            width: 100%
+        .ordering-forgot-item-title
+            text-align: center
+            font-family: Nunito
+            font-style: normal
+            font-weight: normal
+            font-size: 19px
+            line-height: 31px
+            color: #0D0D0D
+            margin-top: 10px
+        .ordering-forgot-item-size
+            text-align: center
+            font-family: Nunito
+            font-style: normal
+            font-weight: normal
+            font-size: 19px
+            line-height: 31px
+            color: #0D0D0D
+            margin-top: 5px
+        .ordering-forgot-item-price
+            font-family: Montserrat
+            font-style: normal
+            font-weight: 600
+            font-size: 36px
+            line-height: 31px
+            color: #000000
+            text-align: center
+        .ordering-forgot-item-button
+            display: block
+            margin: 0 auto
+            margin-top: 15px
+            width: 210px
+            height: 47px
+            background: #fde000
+            box-shadow: 0px 7px 14px rgba(253, 224, 0, 0.08)
+            border: 0
+            font-family: Montserrat
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 31px
+            letter-spacing: .205em
+            text-transform: uppercase
+            color: #212121
+            cursor: pointer
+@media  ( max-width: 800px  )
+    .ordering-forgot
+        flex-direction: column
+        .ordering-forgot-item
+            width: 100%
+@media ( max-width: 1152px )
+  .modal-send
+    input
+      margin-top: 10px
+    textarea
+      margin-top: 10px
+    p
+      font-size: 15px
+      margin-top: 10px
+      line-height: 20px
+    button
+      font-size: 11px
+      margin-top: 15px
+      height: 50px
+    h2
+      font-size: 20px
+.a-index
+  display: flex
+  flex-direction: column
+  padding: 100px
+  a
+    margin-top: 20px
