@@ -187,12 +187,13 @@ let buttons = document.querySelectorAll('button');
         fixedButtonM = document.querySelector('.fixed-button-m');
 
     window.addEventListener('scroll', function(){
-        if( this.scrollY >= 900 ){
-            logo.style.display='none';
-                fixedButtonM.style.display='block';
+        if( this.scrollY > 50 ){
+            logo.classList.add('fixed-button-active');
+            fixedButtonM.classList.remove('fixed-button-active');
+            
         } else {
-            logo.style.display='block';
-                fixedButtonM.style.display='none';
+            fixedButtonM.classList.add('fixed-button-active');
+            logo.classList.remove('fixed-button-active');
         }
     }, {passive: true});
 
